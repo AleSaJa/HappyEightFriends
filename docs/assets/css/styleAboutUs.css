@@ -55,3 +55,82 @@
     top: 3em; left: 100vw;
     z-index: 100; opacity: .6;
 }
+
+
+
+.imgWrap{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.avatarDescription{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    padding: 10px;
+
+}
+
+.contactMe{
+    position: absolute;
+    top: 85%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.imgWrap:hover .avatar{
+    opacity: .2;
+}
+
+.imgWrap:hover .avatarDescription{
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgWrap:hover .contactMe{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.avatar:hover .avatarDescription{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.card:hover .avatar{
+    opacity: .2;
+}
+
+.card .rol{
+    position: absolute;
+    top: 20%;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.card:hover .rol{
+    visibility: visible;
+    opacity: 1;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
