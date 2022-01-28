@@ -10,11 +10,6 @@ navbar.innerHTML += `
     </a>
   </li>
 
-  <li class="nav-item">
-    <a href="./navbar.html" class="nav-link">
-      <span class="link-text">Home</span>
-    </a>
-  </li>
 
   <li class="nav-item">
     <a href="./nosotros.html" class="nav-link">
@@ -47,6 +42,20 @@ navbar.innerHTML += `
     <a href="#" class="nav-link">
     
       <span class="link-text">Tienda</span>
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a href="#" class="nav-link">
+    
+      <span class="link-text">Contacto</span>
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a href="#" class="nav-link">
+    
+      <span class="link-text">About Us</span>
     </a>
   </li>
 
