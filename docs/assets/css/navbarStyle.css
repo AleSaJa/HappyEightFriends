@@ -2,7 +2,7 @@
     font-size: 16px;
     font-family: 'Open Sans';
     --text-primary: #F24141;
-    --text-secondary: #ffffff;
+    --text-secondary: #0f5b61;
     --bg-primary: #4C1D59;
     --bg-secondary: #331540;
     --transition-speed: 600ms;
@@ -28,7 +28,7 @@
   }
   .navbar {
     position: fixed;
-    background-color: var(--bg-primary);
+    background: linear-gradient(to bottom, #190820, #60CFD6);
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;
@@ -71,6 +71,7 @@
   .link-text {
     display: none;
     margin-left: 1rem;
+    color: rgb(255, 255, 255);
   }
   
 
