@@ -28,7 +28,7 @@
   }
   .navbar {
     position: fixed;
-    background-color: var(--bg-primary);
+    background: linear-gradient(to bottom, #331540, #60CFD6);
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;

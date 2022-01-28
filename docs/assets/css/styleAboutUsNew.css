@@ -18,8 +18,8 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card{
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 440px;
+    height: 440px;
     background: #fff;
     padding: 30px;
     border-radius: 50%;
@@ -29,7 +29,7 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card:hover{
     border-radius: 10px;
-    height: 260px;
+    height: 600px;
   }
   .profile-card .img{
     position: relative;
@@ -40,6 +40,8 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card:hover .img{
     transform: translateY(-60px);
+    height: fit-content;
+    margin-bottom: 50px;
   }
   .img img{
     width: 100%;
