@@ -17,7 +17,7 @@ navbar.innerHTML += `
   </li>
 
   <li class="nav-item">
-    <a href="./nosotros.html" class="nav-link">
+    <a href="./AboutUsNew.html" class="nav-link">
      
       <span class="link-text">¿Quiénes somos?</span>
     </a>
