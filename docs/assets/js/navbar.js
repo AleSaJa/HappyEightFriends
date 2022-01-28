@@ -10,16 +10,22 @@ navbar.innerHTML += `
     </a>
   </li>
 
+  <li class="nav-item">
+  <a href="./navbar.html" class="nav-link">
+   
+    <span class="link-text">Inicio</span>
+  </a>
+</li>
 
   <li class="nav-item">
-    <a href="./AboutUsNew.html" class="nav-link">
+    <a href="#" class="nav-link">
      
       <span class="link-text">¿Quiénes somos?</span>
     </a>
   </li>
 
   <li class="nav-item">
-    <a href="./index.html" class="nav-link">
+    <a href="#" class="nav-link">
     
       <span class="link-text">Familia Somos Booking</span>
     </a>
@@ -46,16 +52,16 @@ navbar.innerHTML += `
   </li>
 
   <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="./contactUs.html" class="nav-link">
     
       <span class="link-text">Contacto</span>
     </a>
   </li>
 
   <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="./AboutUsNew.html" class="nav-link">
     
-      <span class="link-text">About Us</span>
+      <span class="link-text">Sobre nosotros</span>
     </a>
   </li>
 
