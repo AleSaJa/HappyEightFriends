@@ -16,6 +16,11 @@ src: url(fonts/HelveticaNow.ttf);
     align-items: center;
     /* background-color: #48214E; */
   }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
   .profile-card{
     position: relative;
     width: 440px;
@@ -29,7 +34,7 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card:hover{
     border-radius: 10px;
-    height: 600px;
+    height: 700px;
   }
   .profile-card .img{
     position: relative;
