@@ -24,7 +24,7 @@
 
 
   #navbar{
-      z-index: 200;
+      
   }
   .navbar {
     position: fixed;
@@ -33,6 +33,7 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
+    z-index: 200;
   }
   
   .navbar-nav {
@@ -115,8 +116,15 @@
   
   /* Small screens */
   @media only screen and (max-width: 600px) {
+    #navbar {
+      top: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+
+
     .navbar {
-      bottom: 0;
+      top: 0;
       width: 100vw;
       height: 5rem;
     }
