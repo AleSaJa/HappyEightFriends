@@ -1,20 +1,19 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: SharkParty;
+  src: url(../Fonts/sharkParty.ttf);
+}
+
+
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans';
     --text-primary: #F24141;
     --text-secondary: #ffffff;
     --bg-primary: #4C1D59;
     --bg-secondary: #331540;
     --transition-speed: 600ms;
-  }
-  
-  body {
-    color: black;
-    /* background-color: white; */
-    background: rgb(2,0,36);
-    background: linear-gradient(69deg, rgba(2,0,36,1) 0%, rgba(9,11,121,1) 30%, rgba(255,0,215,1) 100%); 
-    margin: 0;
-    padding: 0;
   }
   
   main {
@@ -23,6 +22,8 @@
   }
 
   .navbar {
+    font-size: 16px;
+    font-family: Monsterrat;
     position: fixed;
     background: black;
     border-right: 1px #601f8c solid;
@@ -100,6 +101,7 @@
   
   .logo {
     font-weight: bold;
+    font-family: SharkParty;
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
@@ -160,6 +162,12 @@
       top: 0;
       width: 5rem;
       height: 100vh;
+    }
+
+    
+    main {
+      margin-left: 0rem;
+      padding: 0rem;
     }
   
     .navbar:hover {

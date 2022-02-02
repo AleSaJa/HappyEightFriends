@@ -1,21 +1,37 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helveticanow;
+    
+  }
+
+  body{
+    font-family: Monsterrat;
+    background-color: black;
+  }
+
+  :root {
+    --text-primary: #F24141;
+    --text-secondary: #ffffff;
+    --bg-primary: #4C1D59;
+    --bg-secondary: #331540;
+    --bg-tertiary: #864fce;
+    --transition-speed: 600ms;
   }
   @font-face {
 font-family: 'helveticanow';
 src: url(fonts/HelveticaNow.ttf);
   }
   
-  .main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #48214E; */
+
+
+  .row-porfile{
+    height: 70vh;
   }
 
   a{
@@ -24,9 +40,9 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card{
     position: relative;
-    width: 440px;
-    height: 440px;
-    background: #fff;
+    width: 293px;
+    height: 293px;
+    background: var(--bg-tertiary);
     padding: 30px;
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
@@ -35,7 +51,8 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .profile-card:hover{
     border-radius: 10px;
-    height: 700px;
+    /* height: 600px; */
+    height: fit-content;
   }
   .profile-card .img{
     position: relative;
@@ -72,7 +89,7 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .caption p{
     font-size: 16px;
-    color: #333;
+    color: var(--text-secondary);
     margin: 2px 0 9px 0;
   }
   .caption .social-links a{
@@ -83,4 +100,22 @@ src: url(fonts/HelveticaNow.ttf);
   }
   .social-links a:hover{
     color: #48214E;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .profile-card{
+      border-radius: 10px;
+    /* height: 600px; */
+    height: fit-content;
+    }
+    .profile-card:hover .img{
+      
+    }
+
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    
   }
