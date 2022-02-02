@@ -22,18 +22,16 @@
     padding: 1rem;
   }
 
-
-  #navbar{
-      
-  }
   .navbar {
     position: fixed;
-    background: linear-gradient(to bottom, #331540, #60CFD6);
+    background: black;
+    border-right: 1px #601f8c solid;
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;
     padding: 0;
     z-index: 200;
+    
   }
   
   .navbar-nav {
@@ -45,10 +43,20 @@
     align-items: center;
     height: 100%;
     width: 100%;
+
+    overflow-y: auto;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .navbar::-webkit-scrollbar{
+    display: none;
   }
   
   .nav-item {
     width: 100%;
+    
   }
   
   

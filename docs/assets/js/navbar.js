@@ -6,12 +6,12 @@ navbar.innerHTML += `
 <ul class="navbar-nav">
   <li class="logo">
     <a href="#" class="nav-link">
-      <span class="link-text logo-text">Somos Booking</span>
+      <span class="link-text logo-text"><font face="Shark Party, League Spartan, Montserrat">Somos Booking</font></span>
     </a>
   </li>
 
   <li class="nav-item">
-  <a href="./navbar.html" class="nav-link">
+  <a href="./index.html" class="nav-link">
    
     <span class="link-text">Inicio</span>
   </a>
@@ -45,7 +45,7 @@ navbar.innerHTML += `
     </a>
   </li>
   <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="./tienda.html" class="nav-link">
     
       <span class="link-text">Tienda</span>
     </a>
