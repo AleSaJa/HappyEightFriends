@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./assets/css/navbarStyle.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <style>
+        .border hr{
+            border: 1.5px!important;
+        }
+        .font-weight-bold span{
+            font-weight: 550!important;
+        }
+    </style>
+
+
+    <title>Store</title>
+</head>
+
+<body>
+
+    <!-- !NavBar -->
+    <div id="navbar">
+
+    </div>
+
+    <main>
+        <!-- Products -->
+        <div class="container">
+            <section class="row" id="list-items">
+                
+            </section>
+        </div>
+    </main>
+</body>
+
+<!-- 
+    <div class="col-sm-4 col-md-3 mb-3">
+                    <section>
+                        <img class="img-fluid" src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" alt="Article"/>
+                    </section>
+                    <a href="#" class="d-flex flex-column justify-content-center text-center text-decoration-none">
+                        <span class="font-weight-bold">PTV Holiday Bundle</span>
+                        <hr class="w-25 border border-info rounded-pill" >
+                        <span>$89.99</span>
+                    </a>
+                </div>
+-->
+
+<!-- *Script - Products -->
+
+<script>
+    // item
+    function addItem(){
+        const itemsContainer = document.getElementById("list-items");
+        for(let i =0; i<10 ; i++){
+            const itemHTML = `<div class="col-sm-4 col-md-3 mb-3">
+                <section>
+                    <img class="img-fluid" src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" alt="Article"/>
+                </section>
+                <a href="#" class="d-flex flex-column justify-content-center text-center text-decoration-none">
+                    <span class="font-weight-bold">PTV Holiday Bundle</span>
+                    <hr class="w-25 border border-info rounded-pill" >
+                    <span>$89.99</span>
+                </a>
+            </div>`;
+            itemsContainer.innerHTML += itemHTML;
+        }
+}
+addItem();
+// addItem({'name':'juice',
+//     'img':'https://www.gs1india.org/media/Juice_pack.jpg',
+//     'description':'Orange and Apple juice fresh and delicious'});
+
+// addItem({'name':'Tayto',
+//     'img':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
+//     'description':'Cheese & Onion Chips'})
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="./assets/js/navbar.js"></script>
+<script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
