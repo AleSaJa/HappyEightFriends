@@ -1,0 +1,17 @@
+.form-img{
+    height: 20rem;
+    border: 3px dashed;
+}
+
+.form-img-active{
+    background-color: #b8d4fe;
+    border: 3px dashed #618ac9;
+}
+
+.botons-img{
+    width: auto !important;
+}
+
+#formInput_img img{
+    border: solid;
+}
