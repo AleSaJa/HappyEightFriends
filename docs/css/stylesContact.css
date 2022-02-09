@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: #5e34be;
+  
+  }
+
+  .bg-aboutUs {
+    text-shadow: 2px 3px 8px #be99f2 ;
+  }
+
+  .form-register {
+    /* width: 40%; */
+    background: black !important;
+    padding: 30px;
+    /* margin: auto; */
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'montserrat';
+    color: #be99f2 !important;
+    box-shadow: 7px 13px 67px #601f8c !important;
+  }
+  
+  .form-register h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: black!important;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    /* outline: 1px solid #1f07aa ; */
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #f2cb05;
+  }
+
+  .form-group label{
+    margin-top: 1.5em;
+    
+  }
+  
+  .form-register p {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+    
+  }
+  
+  .form__input-error{
+    font-size: 10px;
+    margin-bottom: 0;
+    color: #f24150;
+    display: none;
+  }
+
+  .form__input-error-active{
+    display: block;
+  }
+
+  .form-group__error{
+    background-color: #f2cb05;
+    text-align: center;
+    color: #000;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .form-group__error-active{
+    display: block;
+  }
+
+  .form-group__send{
+    margin: .6em 0;
+    background-color: #60cfd6;
+    color: #000;
+    text-align: center;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .form-group__send-active{
+    display: block;
+  }
+
+  .form-register .botons {
+    width: 100%;
+    background: #5e34be!important;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  /* ------------ Validación ---------------- */
+
+  .form-group-error .controls{
+    outline: 1px solid #f24150 !important;
+  }
+
+    /* Small screens */
+    @media only screen and (max-width: 600px) {
+      main {
+        margin:0 !important;
+      }
+      .form-register p {
+        text-align: center;
+        font-size: 16px;
+      }
+    }
