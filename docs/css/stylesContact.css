@@ -6,6 +6,10 @@
   
   }
 
+  .bg-aboutUs {
+    text-shadow: 2px 3px 8px #be99f2 ;
+  }
+
   .form-register {
     /* width: 40%; */
     background: black !important;
@@ -13,11 +17,16 @@
     /* margin: auto; */
     margin-top: 100px;
     border-radius: 4px;
-    font-family: 'calibri';
-    color: #8a3bd9 !important;
-    box-shadow: 7px 13px 37px #000 !important;
+    font-family: 'montserrat';
+    color: #be99f2 !important;
+    box-shadow: 7px 13px 67px #601f8c !important;
   }
   
+  .form-register h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
   .form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;

@@ -26,38 +26,36 @@
 <!-- JumboTron -->
 <div class="p-5 text-center aboutUs">
     <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-            <h1 class="mb-3 title-jumbotron">Contacto</h1>
-        </div>
+        <div class="form-register"><h1>Contacto</h1></div>
     </div>
 </div>
 
 <div class="container-sm">
     <div class="row ">
-        <div class="col-sm-2>
+        <div class="col-sm-2">
         </div>
-        <div class="col-sm"  
-            <form id="formContacto" class="form-register">
+        <div class="col-sm">  
+        <form id="formContacto" class="form-register">
 
                 <!-- Input: Nombre -->
                 <div class="form-group" id="formInput_nombre">
                     <label for="nombre">Nombre</label>
                     <input class="controls text1" type="text" name="name" id="nombre" placeholder="Ingrese su Nombre">
-                    <p id="input__nombre" class="form__input-error">El nombre solo puede contener letras.</p>
+                    <p id="input__nombre" class="form__input-error">El nombre sólo puede contener letras</p>
                 </div>
 
                 <!-- Input: Correo -->
                 <div class="form-group" id="formInput_correo">
                     <label for="correo">Correo</label>
                     <input class="controls" type="email"  name="email" id="correo" placeholder="Ingrese su correo electrónico">
-                    <p id="input__correo" class="form__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guión bajo.</p>
+                    <p id="input__correo" class="form__input-error">El correo sólo puede contener letras, números, puntos y guiones</p>
                 </div>
 
                 <!-- Input: Telefono -->
                 <div class="form-group" id="formInput_telefono">
                     <label for="telefono">Teléfono</label>
                     <input class="controls" type="text" name="number" id="telefono" placeholder="Ingrese su teléfono">
-                    <p id="input__telefono" class="form__input-error">El telefono solo puede contener numeros, de 10 a 14 dígitos.</p>
+                    <p id="input__telefono" class="form__input-error">El teléfono sólo puede contener números y es de 10 a 14 dígitos</p>
                 </div>
 
                 <!-- TextArea: Mensaje -->
@@ -69,14 +67,14 @@
 
                 <!-- Mensaje Error -->
                 <div class="form-group__error" id="mailError">
-                    <p><img src="../assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> <b>Upps:</b> Por favor rellena todos los campos correctamente. </p>
+                    <p><img src="./assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> <b>Upps:</b> Por favor rellena todos los campos correctamente</p>
                 </div>
                 <!-- Boton Submit -->
                 <button class="botons" id="submitBtn" type="submit" value="Enviar">Enviar</button>
 
                 <!-- Mensaje Envio -->
                 <div class="form-group__send" id="mailSuccessful">
-                    <p><img src="../assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> Mensaje Enviado Exitosamente.</p>
+                    <p><img src="./assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> Mensaje Enviado Exitosamente</p>
                 </div>
 
             </form>
