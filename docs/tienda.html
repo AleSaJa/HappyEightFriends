@@ -1,9 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
@@ -11,66 +8,86 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/navbarStyle.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Tienda</title>
+    <link rel="stylesheet" href="./assets/css/tienda.css">
+
+    <title>Store</title>
+
+    <style>
+        .navbar {
+            font-size: 16px;
+            font-family: Monsterrat;
+            /* position: static;  */
+            background: black;
+            border-right: 1px #601f8c solid;
+            transition: width 600ms ease;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            z-index: 200;    
+        }
+    </style>
 </head>
+<!-- 
+<header>
+  <input type="text" name="" id="">
+</header> -->
+
 <body>
+  
     <!-- !NavBar -->
-  <div id="navbar">
+    <div id="navbar">
 
-  </div>
-
-  <section class="product-list">
-  </section>
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-4 col-md-3 col-xl-2 click-product">
-          <section class="product-container browse">
-            <a href="/122357/PTV-Holiday-Bundle">
-              <div class="product-image thumbnail">
-                <img class="card-img-top img-responsive overlay" src="./assets/images/d5.jpg" alt="" /><img class="img-responsive bttrlazyloading" data-bttrlazyloading-lg-src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" data-bttrlazyloading-lg-width="262" data-bttrlazyloading-lg-height="392" data-bttrlazyloading-animation="fadeIn" data-bttrlazyloading-retina="false" data-bttrlazyloading-delay="500" data-bttrlazyloading-threshold="200" src="" alt="PTV Holiday Bundle" />
-              </div>
-                    <a href="/122357/PTV-Holiday-Bundle" class="hover-overlay hidden-xs">
-                <span class="product-view-item">View Item</span>
-              </a>
-                  </a>
-          </section>
-          
-          <a href="/122357/PTV-Holiday-Bundle" class="product-caption">
-            <span class="center-block product-name">PTV Holiday Bundle</span>
-            <hr>
-            <span class="center-block">$89.99</span>
-              </a>
-          </div>
-        <div class="card col">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-
-      <!--  -->
-      <div class="row">
-        <div class="col">
-          1 of 3
-        </div>
-        <div class="col">
-          2 of 3
-        </div>
-        <div class="col">
-          3 of 3
-        </div>
-      </div>
     </div>
-  </main>
+
+    <!-- !Container -->
+    <main>
+
+        <!-- Products -->
+        <div class="container">
+            <section class="row mb-3 mt-3 navbar-dark bg-dark">
+                
+                
+                <!-- *Search -->
+                <nav class="col-sm-6 col-mb-4 d-flex ">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+
+                <!-- *View Cart -->
+                <div class="col-sm-6 col-mb-4 d-flex text-right justify-content-end">
+                    <a href="#" class="font-weight-bold  text-white">
+                        <i class="bi bi-bag-fill mr-2"></i>
+                        View Cart
+                    </a>
+                </div>
+            </section>
+            <section class="row" id="list-items">
+                <div class="col-sm-4 col-md-3 mb-3">
+                    <section class="view-item">
+                        <img class="img-fluid" src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" alt="Article"/>
+                    </section>
+                    <a href="#" class="d-flex flex-column justify-content-center text-center text-decoration-none">
+                        <span class="font-weight-bold">PTV Holiday Bundle</span>
+                        <hr class="w-25 border border-info rounded-pill" >
+                        <span>$89.99</span>
+                    </a>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+</body>
+
+<!-- 
+    
+-->
 
 
-</section>
+
 <!-- Scripts -->
+<script src="./assets/js/store.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="./assets/js/navbar.js"></script>
 <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>

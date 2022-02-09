@@ -1,3 +1,10 @@
-.product-list{
+.border hr{
+    border: 1.5px!important;
+}
+.font-weight-bold span{
+    font-weight: 550!important;
+}
 
+.img-product:hover{
+     
 }

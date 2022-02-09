@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+
 /* ---------------- Styles Body, NavBar & Main ------------- */
 body {
     background: black;
     margin: 0;
     padding: 0;
+    font-family: Monsterrat;
 }
 
 
@@ -21,12 +27,17 @@ main {
     object-fit: cover;
 }
 
+.banner{
+    width: fit-content;
+    margin: auto;
+}
+
 /* Image Background */
 .img-background{
     position: sticky;
     height: 60vh; 
     top: 3rem;
-    opacity: .2;
+    opacity: .1;
     z-index: 0;
 }
 

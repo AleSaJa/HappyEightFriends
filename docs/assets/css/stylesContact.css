@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-color: #5e34be;
   }
 
   .form-register {
     /* width: 40%; */
-    background: #390c6d !important;
+    background: black !important;
     padding: 30px;
     /* margin: auto; */
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: white !important;
+    color: #8a3bd9 !important;
     box-shadow: 7px 13px 37px #000 !important;
   }
   
@@ -23,18 +24,19 @@
   
   .controls {
     width: 100%;
-    background: #5b13cf!important;
+    background: black!important;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 1em;
     /* outline: 1px solid #1f07aa ; */
     font-family: 'calibri';
     font-size: 18px;
-    color: white;
+    color: #f2cb05;
   }
 
   .form-group label{
     margin-top: 1.5em;
+    
   }
   
   .form-register p {
