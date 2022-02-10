@@ -141,17 +141,20 @@ inputs.forEach((input) => {
 
 
 // *----Publish Product------------
-formulario.addEventListener('submit', (e) => {
+formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
 
 	if(campos.product && campos.price && campos.description && campos.image){
-		formulario.reset();
+        await makePostRequest(publication.product,publication.image,publication.price,publication.description);
+        formulario.reset();
 		document.getElementById('mailError').classList.remove('form-group__error-active');
 		document.getElementById('mailSuccessful').classList.add('form-group__send-active');
 		setTimeout(() => {
             document.getElementById('mailSuccessful').classList.remove('form-group__send-active');
 		}, 5000);
-        makePostRequest(publication.product,publication.image,publication.price,publication.description);
+        setTimeout(
+            location.href = "../html/tienda.html"
+        ,10000);
 	} else {
 		document.getElementById('mailError').classList.add('form-group__error-active');
 	}
@@ -169,7 +172,7 @@ async function makePostRequest(name,img,price,description) {
         id: array.length-1,
         name: name,
         img: img,
-        price: price,
+        price: "$"+price,
         description: description
     });
     console.log(res);

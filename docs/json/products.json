@@ -69,20 +69,6 @@
       "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79617/Holiday_WrappingPaper_Black_01a.jpg",
       "price": "$4.99",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-    {
-      "id": 10,
-      "name": "Sudadera",
-      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1644369211/bwzh8ajhqbawq4futcna.jpg",
-      "price": "99.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-    },
-    {
-      "id": 11,
-      "name": "Producto",
-      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1644428281/hsox9cy9biasjthtqrp4.jpg",
-      "price": "22.00",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }
   ]
 }
