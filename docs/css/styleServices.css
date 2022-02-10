@@ -18,6 +18,7 @@
 /* Jumbotron */
 .img-jumbotron{
     padding: 0 1rem;
+    margin-left: 6rem;
     width: auto;
     height: auto;
     object-fit: cover;
