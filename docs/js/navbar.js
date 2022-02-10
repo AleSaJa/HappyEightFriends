@@ -32,7 +32,7 @@ navbar.innerHTML += `
   </li>
 
   <li class="nav-item">
-    <a href="#" class="nav-link">
+    <a href="./servicios.html" class="nav-link">
     
       <span class="link-text">Servicios</span>
     </a>

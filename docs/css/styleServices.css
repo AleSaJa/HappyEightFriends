@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: SharkParty;
+    src: url(../Fonts/sharkParty.ttf);
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: #5e34be;
+  }
+
+/* Jumbotron */
+.img-jumbotron{
+    padding: 0 1rem;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    font-weight: bold;
+    font-family: SharkParty;
+    
+}
+
+.up{
+    width: 96%;
+    height: 250px;
+    margin: auto;
+}
+
+.bg-aboutUs {
+  text-shadow: 2px 3px 8px #be99f2 ;
+}
+
+  .form-register {
+    /* width: 40%; */
+    background: black !important;
+    padding: 30px;
+    /* margin: auto; */
+    margin-top: 100px;
+    border-radius: 74px;
+    font-family: 'Montserrat';
+    color: #be99f2 !important;
+    box-shadow: 7px 13px 67px #601f8c !important;
+  }
+
+
+  
+  .form-register h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #f24150
+  }
+
+  .form-register button {
+    font-size: 15px;
+    margin-bottom: 20px;
+    background-color: black;
+    color:#f2cb05;
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .img-jumbotron{
+        height: auto;
+        padding: 0;
+    }
+}
