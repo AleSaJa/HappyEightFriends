@@ -3,6 +3,7 @@ let navbar = document.getElementById("navbar");
 navbar.innerHTML += `
 
 <nav class="navbar">
+
             <ul class="navbar-nav">
               <li class="logo">
                 <a href="../index.html" class="nav-link">
