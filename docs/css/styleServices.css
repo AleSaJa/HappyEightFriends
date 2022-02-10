@@ -27,7 +27,7 @@
 }
 
 .up{
-    width: 96%;
+    width: min-content;
     height: 250px;
     margin: auto;
 }

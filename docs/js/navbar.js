@@ -5,17 +5,10 @@ navbar.innerHTML += `
 <nav class="navbar">
             <ul class="navbar-nav">
               <li class="logo">
-                <a href="#" class="nav-link">
+                <a href="/docs/index.html" class="nav-link">
                   <span class="link-text logo-text"><font face="Shark Party, League Spartan, Montserrat">Somos Booking</font></span>
                 </a>
               </li>
-            
-              <li class="nav-item">
-              <a href="/docs/index.html" class="nav-link">
-               
-                <span class="link-text">Inicio</span>
-              </a>
-            </li>
             
               <li class="nav-item">
                 <a href="#" class="nav-link">
