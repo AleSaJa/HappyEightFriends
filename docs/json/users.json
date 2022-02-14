@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Fulanito",
+      "phone": "6666666666",
+      "email": "prueba@booking.com",
+      "password": "Hola"
+    },
+    {
+      "id": 2,
+      "name": "Juanito",
+      "phone": "6666666666",
+      "email": "prueba@booking.com",
+      "password": "hola"
+    },
+    {
+      "id": 3,
+      "name": "Alan",
+      "phone": "5555555555",
+      "email": "prueba@gmail.com",
+      "password": "hola"
+    }
+  ]
+}
