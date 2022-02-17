@@ -24,16 +24,49 @@ body{
     font-family: 'Montserrat';
     color: white;
     text-align: center;
+    height: 480px;
     padding: 30px;
     border-radius: 25px;
-    background-color: rgba(96, 26, 143, 0.616);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 } 
 
-.content:hover{
-    background-color: rgba(96, 26, 143, 0.432);
+.content >.front{
+    padding: 50px 0;
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background-color: rgba(96, 26, 143, 0.616);
+    height:425px;
+    border-radius: 25px;
+    -webkit-backface-visibility: hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition:transform .5s linear 0s;
 }
+
+.content >.back{
+    padding: 50px 0;
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgba(96, 26, 143, 0.616);
+    height:425px;
+    border-radius: 25px;
+    -webkit-backface-visibility: hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition:transform .5s linear 0s;
+}
+
+.content:hover >.front{
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.content:hover >.back{
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+
 .content h2{
     font-size: 20px;
     margin:10px auto;
@@ -45,12 +78,19 @@ body{
 }
 
 .content p{
+    font-style: italic;
     line-height: 1.9;
+    width: 90%;
+    margin: 10px;
 }
 
 .socials i{
     font-size: 25px;
     margin: 0 10px;
+}
+
+.socials a{
+    color: white;
 }
 .owl-dots{
     text-align: center;
