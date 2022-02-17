@@ -2,6 +2,8 @@ const formulario = document.getElementById('formContacto');
 const inputs = document.querySelectorAll('#formContacto input');
 var post = false;
 
+
+
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
@@ -97,8 +99,13 @@ formulario.addEventListener('submit', async (e) => {
 // *Make a POST Request to LocalHost Products
 
 async function makePostRequest(name,phone,email,password) {
+
     let array = await axios.get('http://localhost:3000/users/');
 	let data = array.data;
+
+	//Encriptar contraseña en MD5
+	password = CryptoJS.MD5(password).toString();
+
 	for(element of data){
 		if(element.name == name || element.email == email || element.phone == phone){
 			post = false;

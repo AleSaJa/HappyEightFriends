@@ -20,6 +20,13 @@
       "phone": "5555555555",
       "email": "prueba@gmail.com",
       "password": "hola"
+    },
+    {
+      "id": 4,
+      "name": "ruravi",
+      "phone": "3310611788",
+      "email": "joseruravi@hotmail.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     }
   ]
 }
