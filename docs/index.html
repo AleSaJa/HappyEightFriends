@@ -11,7 +11,9 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./css/navbarStyle.css">
     <link rel="stylesheet" href="./css/index.css">
-
+      <!--Animation scroll-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/scrollreveal@4"></script>
     
     <title>Index HTML</title>
 </head>
@@ -116,22 +118,13 @@
       </div>
       </div>
     </div>
-
-    <!-- SingUp -->
-    <a href="./html/singUp.html" style="position: absolute; top: 2rem;right: 3rem; color: #007bff;">
-      <i class="bi bi-fingerprint" style="font-size:2.5rem"></i>
-      <p>
-        Registrase
-      </p>
-    </a>
-
     <!-- *Image Background -->
     <div class="img-background text-center">
       <img src="./assets/images/somosBooking_1.jpeg" class="rounded-circle" alt="Somos Booking ">
     </div>
 
     <!-- *Spotify -->
-    <div class="container">
+    <div class="headline" class="container">
       <div class="row">
         <div class="col-8"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -168,7 +161,7 @@
       <!-- *Car Gallery -->
       <div class="row row-cols-1 row-cols-md-3 mt-5" id="gallery">
         <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-down">
               <img class="card-img-top" src="./assets/images/e1.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -177,7 +170,7 @@
             </div>
         </div>
         <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-down">
                 <img class="card-img-top" src="./assets/images/e2.jpg" class="card-img-top rounded-circle"alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -186,7 +179,7 @@
             </div>
         </div>
         <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-down">
               <img class="card-img-top" src="./assets/images/e3.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -195,7 +188,7 @@
             </div>
         </div>
         <div class="col-sm mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-down">
                 <img class="card-img-top" src="./assets/images/e4.png" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -204,7 +197,7 @@
             </div>
         </div>
         <div class="col-sm mb-4">
-          <div class="card card  bg-dark h-100">
+          <div class="card card  bg-dark h-100" data-aos="flip-down">
               <img class="card-img-top" src="./assets/images/e5.png" class="card-img-top rounded-circle" alt="...">
               <div class="card-body">
               <h5 class="card-title">Evento</h5>
@@ -213,7 +206,7 @@
           </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-down">
             <img class="card-img-top" src="./assets/images/e6.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -222,7 +215,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-down">
             <img class="card-img-top" src="./assets/images/e7.jpg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -231,7 +224,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-down">
             <img class="card-img-top" src="./assets/images/e8.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -240,7 +233,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-down">
             <img class="card-img-top" src="./assets/images/e9.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -249,7 +242,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card mb-4 bg-dark h-50">
+        <div class="card card mb-4 bg-dark h-50" data-aos="flip-down">
             <img class="card-img-top" src="./assets/images/e10.jpeg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -325,7 +318,7 @@
   </div>
 
   <div class="card mt-3 card  bg-dark">
-    <div class="row no-gutters">
+    <div class="row no-gutters" data-aos="fade-up-right">
         <div class="col-md-5">
             <img src="./assets/images/Sage Skylight.jpg" class="d-block w-100" alt="imagen">
         </div>
@@ -339,7 +332,7 @@
   </div>
 
   <div class="card mt-3 card  bg-dark">
-    <div class="row no-gutters">
+    <div class="row no-gutters" data-aos="fade-up-left">
       <div class="col-md">
         <div class="card-body">
           <h5 class="card-title">The Black Hardies</h5>
@@ -353,7 +346,7 @@
   </div>
 
   <div class="card card  bg-dark">
-    <div class="row no-gutters">
+    <div class="row no-gutters" data-aos="fade-up-right">
         <div class="col-md">
             <img src="./assets/images/Warhol.JPG" class="d-block w-100" alt="imagen">
         </div>
@@ -380,7 +373,7 @@
 
 
       <div class="card-group">
-        <div class="card bg-dark">
+        <div class="card bg-dark" data-aos="zoom-in-up">
           <img class="card-img-top" src="./assets/images/a2.jpg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
@@ -390,7 +383,7 @@
             <p class="card-text"><small class="text-muted">Créditos de las fotos: Christopher Trejo</small></p>
           </div>
         </div>
-        <div class="card bg-dark">
+        <div class="card bg-dark" data-aos="zoom-in-up">
           <img class="card-img-top" src="./assets/images/a1.jpg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
@@ -400,7 +393,7 @@
             <p class="card-text"><small class="text-muted">Créditos de las fotos: Perla Palos</small></p>
           </div>
         </div>
-        <div class="card bg-dark">
+        <div class="card bg-dark" data-aos="zoom-in-up">
           <img class="card-img-top" src="./assets/images/a3.jpeg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
@@ -443,9 +436,16 @@
       </div>
     </footer>
   </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 <!-- Scripts -->
 
+ <script>
+  ScrollReveal().reveal('.headline');
+</script> -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- <script src="./js/navbar.js"></script> -->
