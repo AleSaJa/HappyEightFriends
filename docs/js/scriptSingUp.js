@@ -112,10 +112,9 @@ async function makePostRequest(name,phone,email,password) {
 				background: '#121212',
 				timer: 1500,
 			})
-			break;
+			return;
 		}
-	}
-	post = true;
+	}post = true;
 	if(post){
 		Swal.fire({
 			title: 'Registro Exitoso',
@@ -134,5 +133,5 @@ async function makePostRequest(name,phone,email,password) {
 			password: password
 		});
 		console.log(res);
-	}
+	} 
 }
