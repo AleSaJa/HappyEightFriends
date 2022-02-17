@@ -17,7 +17,7 @@
   }
   
   main {
-    margin-left: 5rem;
+    margin-left: 6rem;
     padding: 1rem;
   }
 
@@ -71,12 +71,19 @@
     transition: var(--transition-speed);
     width: 100%;
   }
+
+  .nav-link .nav-icon{
+    padding: 10px;
+    width:auto;
+    height: inherit;
+  }
   
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
     color: var(--text-secondary);
   }
+
   
   .link-text {
     display: none;
@@ -160,7 +167,7 @@
   @media only screen and (min-width: 600px) {
     .navbar {
       top: 0;
-      width: 5rem;
+      width: 6rem;
       height: 100vh;
     }
 
@@ -186,5 +193,10 @@
     .navbar:hover .logo-text
     {
       left: 0px;
+    }
+
+    .navbar:hover .nav-icon
+    {
+      margin-left: auto;
     }
   }
