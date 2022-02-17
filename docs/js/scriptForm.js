@@ -49,68 +49,46 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
-
+	let mensaje = document.getElementById('mensaje').value;
 	if(campos.nombre && campos.correo && campos.telefono){
-		array.push(formulario['name'].value);
-		array.push(formulario['email'].value);
-		array.push(formulario['number'].value);
-		array.push(formulario['messages'].value);
-		formulario.reset();
-		document.getElementById('mailError').classList.remove('form-group__error-active');
-		document.getElementById('mailSuccessful').classList.add('form-group__send-active');
-		setTimeout(() => {
-			document.getElementById('mailSuccessful').classList.remove('form-group__send-active');
-		}, 5000);
+		Swal.fire({
+			title: 'Bien',
+			text: 'Mensaje Enviado Exitosamente',
+			position: 'top',
+			icon: 'success',
+			showConfirmButton: false,
+			color: '#5e34be',
+			background: '#121212',
+			timer: 1500,
+		})
 		Email.send({
 			Host : "smtp.mailtrap.io",
 			Username : "98e7c94d8e9b4a",
 			Password : "d655abf4dcd397",
 			To : 'somos.booking2.contact@gmail.com',
-			From : array[1],
+			From : inputs[1].value,
 			Subject : "Nuevo Mensaje de Contacto",
 			Body : `
 			<h1>Información de Usuario</h1>
 			<ul>
-			<li>Nombre de Usuario: ${array[0]}</li>
-			<li>Email: ${array[1]}</li>
-			<li>Número de contacto: ${array[2]}</li>
+			<li>Nombre de Usuario: ${inputs[0].value}</li>
+			<li>Email: ${inputs[1].value}</li>
+			<li>Número de contacto: ${inputs[2].value}</li>
 			</ul>
-			<p>Mensaje: ${array[3]}</p>`
+			<p>Mensaje: ${mensaje}</p>`
 		})
+		formulario.reset();
 	} else {
-		document.getElementById('mailError').classList.add('form-group__error-active');
+		Swal.fire({
+			title: 'Upps...',
+			text: 'Por favor rellena todos los campos correctamente',
+			position: 'top',
+			icon: 'error',
+			iconColor: '#f24150',
+			showConfirmButton: false,
+			color: '#5e34be',
+			background: '#121212',
+			timer: 1500,
+		})
 	}
 });
-
-
-
-// --------------Super PlaceHolder ------------------
-
-	/* const btn = document.getElementById('submitBtn');
-	// const form = document.getElementById('formContacto');
-	 btn.addEventListener('click', sendEmail);
-	
-	
-	
-	 function sendEmail(){
-		// event.preventDefault();
-		Email.send({
-			Host : "smtp.mailtrap.io",
-			Username : "98e7c94d8e9b4a",
-			Password : "d655abf4dcd397",
-			To : 'somos.booking2.contact@gmail.com',
-			From : formulario['email'].value,
-			Subject : "Nuevo Mensaje de Contacto",
-			Body : `
-			<h1>Información de Usuario</h1>
-			<ul>
-			<li>Nombre de Usuario: ${formulario['name'].value}</li>
-			<li>Email: ${formulario['email'].value}</li>
-			<li>Número de contacto: ${formulario['number'].value}</li>
-			</ul>
-			<p>Mensaje: ${formulario['messages'].value}</p>`
-		}).then(
-			message => alert(message)
-		);    
-	}
-	 */

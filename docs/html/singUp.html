@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../css/stylesContact.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbarStyle.css">
+    
+    <title>Registro</title>
+</head>
+<body>
+  
+    <!-- !NavBar -->
+    <div id="navbar">
+
+    </div>
+
+    <!-- !Container -->
+    <main style="margin-left: 6rem;">
+        <!-- Form -->
+        <form id="formContacto" class="container-sm d-flex flex-column align-items-center w-50 form-register">
+            <!-- Input: Nombre -->
+            <div class="form-group w-100" id="formInput_nombre">
+                <label for="nombre">Nombre</label>
+                <input class="controls" type="text" name="name" id="nombre" placeholder="Ingrese su Nombre">
+                <p id="input__nombre" class="form__input-error">El nombre sólo puede contener letras</p>
+            </div>
+            <!-- Input: Telefono -->
+            <div class="form-group w-100" id="formInput_telefono">
+                <label for="telefono">Teléfono</label>
+                <input class="controls" type="text" name="number" id="telefono" placeholder="Ingrese su teléfono">
+                <p id="input__telefono" class="form__input-error">El teléfono sólo puede contener números y es de 10 a 14 dígitos</p>
+            </div>
+            <!-- Input: Correo -->
+            <div class="form-group w-100" id="formInput_correo">
+                <label for="correo">Correo</label>
+                <input class="controls" type="email"  name="email" id="correo" placeholder="Ingrese su correo electrónico">
+                <p id="input__correo" class="form__input-error">El correo sólo puede contener letras, números, puntos y guiones</p>
+            </div>
+            <!-- Input: Password -->
+            <div class="form-group w-100" id="formInput_password1">
+                <label for="password1">Password</label>
+                <input type="password" class="controls" name="password1" id="password1">
+                <p id="input__password1" class="form__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+            <!-- Input: Check Password -->
+            <div class="form-group w-100" id="formInput_password2">
+                <label for="password2">Password</label>
+                <input type="password" class="controls" name="password2" id="password2">
+                <p id="input__password2" class="form__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+            <!-- Check -->
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="check" id="check">
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+            <!-- Button -->
+                <button class="botons" id="submitBtn" type="submit" value="Enviar">Confirmar</button>
+            </div>
+        </form>
+    </main>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Sweetalert Js-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap 4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/scriptSingUp.js"></script>
+</body>
+</html>

@@ -69,6 +69,13 @@
       "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79617/Holiday_WrappingPaper_Black_01a.jpg",
       "price": "$4.99",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 10,
+      "name": "Prueba",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1644891812/idsge7uboypeou4qq35e.png",
+      "price": "$99.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     }
   ]
 }

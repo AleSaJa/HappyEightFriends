@@ -1,5 +1,6 @@
 let navbar = document.getElementById("navbar");
 
+
 navbar.innerHTML += `
 
 <nav class="navbar">
