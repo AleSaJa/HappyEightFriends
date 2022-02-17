@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Forget Regret Hoodie",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/115910/364679246.jpg",
+      "price": "$89.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 1,
+      "name": "Selfish Machines Hoodie",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/121057/PTV_SELFISHMACHINES-HOODIE.jpg",
+      "price": "$39.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 2,
+      "name": "A Flair For the Dramatic Vinyl (Flair: Green/White)",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/120827/PTV_AFFTD-LP.jpg",
+      "price": "$19.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 3,
+      "name": "Selfish Machines CD",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79828/selfishmachines_cd_01.jpg",
+      "price": "$9.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 4,
+      "name": "Tape Hoodie",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/118848/Tape_PulloverHoodie_White_01a.jpg",
+      "price": "$39.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 5,
+      "name": "Something Beautiful Bundle",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/122358/PTV_SOMETHINGBEAUTIFUL-BUNDLE.jpg",
+      "price": "$49.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 6,
+      "name": "Darling You’ll Be Okay Crewneck",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/121055/PTV_DARLING-CREWNECK.jpg",
+      "price": "$34.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 7,
+      "name": "Rose Long Sleeve Tee (Black)",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/111740/unnamed.jpeg",
+      "price": "$24.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 8,
+      "name": "Holiday Wrapping Paper (Blue)",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/90028/Holiday_WrappingPaper_Blue_01a.jpg",
+      "price": "$4.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "id": 9,
+      "name": "Holiday Wrapping Paper (Black)",
+      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79617/Holiday_WrappingPaper_Black_01a.jpg",
+      "price": "$4.99",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+  ]
+}

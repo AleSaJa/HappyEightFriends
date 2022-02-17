@@ -1,0 +1,147 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+
+
+body{
+    font-family: Montserrat;
+}
+
+.aboutUs{
+    width: 100%; height: 60vh;
+    -webkit-animation: color-change-3x 4s linear infinite alternate-reverse backwards;
+    animation: color-change-3x 4s linear infinite alternate-reverse backwards;
+}
+
+/* 
+.container-aboutUsCards{
+    position: relative;
+} */
+@-webkit-keyframes color-change-3x {
+    0% {
+        background: #9067B5;
+    }
+    50% {
+        background: #7E80B9;
+    }
+    100% {
+        background: #60CFD6;
+    }
+}
+@keyframes color-change-3x {
+    0% {
+        background: #9067B5;
+    }
+    50% {
+        background: #7E80B9;
+    }
+    100% {
+        background: #60CFD6;
+    }
+}
+
+.title-jumbotron{
+    font-size: 3em;
+}
+
+.bg-aboutUs{
+    background-color: #c9c9c9 !important;
+}
+
+.bg-violet{
+    background-color: #be99f2 !important;
+}
+
+.bg-purple{
+    background-color: #8c467a !important;
+}
+
+.bg-blue{
+    background-color: #689bb6 !important;
+}
+
+.spoti{
+    position: sticky;
+    top: 3em; left: 100vw;
+    z-index: 100; opacity: .6;
+}
+
+
+
+.imgWrap{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.avatarDescription{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+
+    padding: 10px;
+
+}
+
+.contactMe{
+    position: absolute;
+    top: 85%;
+    bottom: auto;
+    left: 50%;
+    right: auto;
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.imgWrap:hover .avatar{
+    opacity: .2;
+}
+
+.imgWrap:hover .avatarDescription{
+    visibility: visible;
+    opacity: 1;
+}
+
+.imgWrap:hover .contactMe{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.avatar:hover .avatarDescription{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.card:hover .avatar{
+    opacity: .2;
+}
+
+.card .rol{
+    position: absolute;
+    top: 20%;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.card:hover .rol{
+    visibility: visible;
+    opacity: 1;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
