@@ -1,11 +1,5 @@
 {
-  "name": "happy",
-  "version": "1.0.0",
-  "description": "Generation",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "happy",
-  "license": "ISC"
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
 }

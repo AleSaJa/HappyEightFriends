@@ -4,22 +4,22 @@ var post = false;
 
 const campos = {
 	nombre: false,
-	password1: false
+	password: false
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "name":
-			validarCampo(expresiones.nombre, e.target, 'nombre');
+			validarCampo(e.target, 'nombre');
 		break;
-		case "password1":
-			validarCampo(expresiones.password, e.target, 'password1');
+		case "password":
+			validarCampo(e.target, 'password');
 		break;
 	}
 }
 
-const validarCampo = (expresion, input, campo) => {
-	if(expresion.test(input.value)){
+const validarCampo = (input, campo) => {
+	if(input.value != ""){
 		campos[campo] = true;
 	} else {
         campos[campo] = false;
@@ -34,8 +34,7 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	const terminos = document.getElementById('check');
-	if(campos.nombre && campos.password1){
+	if(campos.nombre && campos.password){
 		await makePostRequest(inputs[0].value, inputs[1].value);
 		formulario.reset();
 	} else {
@@ -71,9 +70,10 @@ async function makePostRequest(name, password) {
 
 	for(element of data){
 		if(element.name == name && element.password == password){
-			post = false;
+			post = true;
             Swal.fire({
-                title: 'Registro Exitoso',
+                title: 'Usuario',
+				text: `${element.name}`,
                 position: 'top',
                 icon: 'success',
                 showConfirmButton: false,
@@ -83,11 +83,10 @@ async function makePostRequest(name, password) {
             })
 			return;
 		}
-	}post = true;
-	if(post){
-        
+	}post = false;
+	if(!post){
         Swal.fire({
-            title: 'Usuario ya Registrado',
+            title: 'Usuario/Contraseña invalidos',
             position: 'top',
             icon: 'warning',
             iconColor: '#f2cb05',
@@ -96,7 +95,5 @@ async function makePostRequest(name, password) {
             background: '#121212',
             timer: 1500,
         })
-	
-		console.log(res);
 	} 
 }
