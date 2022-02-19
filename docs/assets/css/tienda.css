@@ -7,8 +7,16 @@
 
 .img-product:hover{
      
+} */
+
+.search{
+    padding-left: 21px;
 }
 
+.carrito{
+    position: relative;
+    left: -100px;
+}
 
 /* tiendaNuevo */
 .h1{
@@ -32,8 +40,6 @@ body{
     min-height: 100vh;
     background: #131313;
 }
-
-
 
 /*.item-Container{
     
