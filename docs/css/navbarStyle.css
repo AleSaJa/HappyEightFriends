@@ -9,6 +9,7 @@
 
 
 :root {
+  
     --text-primary: #F24141;
     --text-secondary: #ffffff;
     --bg-primary: #4C1D59;
@@ -17,16 +18,16 @@
   }
   
   main {
-    margin-left: 6rem;
+    margin-left: 6rem !important;
     padding: 1rem;
   }
 
   .navbar {
     font-size: 16px;
-    font-family: Monsterrat;
+    font-family: Montserrat;
     position: fixed;
-    background: black;
-    border-right: 1px #601f8c solid;
+    background: none;
+  /*  border-right: 1px #601f8c solid; */
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;
@@ -80,7 +81,7 @@
   
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
+    background: var(--bg-#601f8c);
     color: var(--text-secondary);
   }
 
@@ -106,6 +107,8 @@
     transition: var(--transition-speed);
   }
   
+
+
   .logo {
     font-weight: bold;
     font-family: SharkParty;
@@ -113,20 +116,23 @@
     margin-bottom: 1rem;
     text-align: center;
     color: var(--text-secondary);
-    background: var(--bg-secondary);
+    background: var(--bg-#601f8c);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
     width: 100%;
-  }
     
-  .logo-text
+  }
+  
+    
+ .logo-text
   {
+    font-family: SharkParty;
     display: inline;
     position: absolute;
     left: -999px;
     transition: var(--transition-speed);
-  }
-  
+  } 
+
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
@@ -159,7 +165,7 @@
     }
   
     main {
-      margin:5rem;
+      margin:0 !important;
     }
   }
   

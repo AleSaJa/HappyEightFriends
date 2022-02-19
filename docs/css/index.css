@@ -3,6 +3,14 @@
     src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
   }
 
+  @font-face {
+    font-family: 'sharkParty';
+    src: url('../fonts/sharkParty.ttf');
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') 
+  }
+
+  
+
 /* ---------------- Styles Body, NavBar & Main ------------- */
 body {
     background: black;
