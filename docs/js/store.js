@@ -50,7 +50,7 @@ listProducts.push({'name':'Holiday Wrapping Paper (Black)','img':'https://d3eum8
 
 async function makeGetRequest() {
     try{
-        let res = await axios.get('http://localhost:3000/products/');
+        let res = await axios.get('http://localhost:3001/products/');
         const itemsContainer = document.getElementById("list-items");
         let data = res.data;
         for(element of data){

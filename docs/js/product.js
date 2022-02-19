@@ -167,8 +167,8 @@ formulario.addEventListener('submit', async (e) => {
 // *Make a POST Request to LocalHost Products
 
 async function makePostRequest(name,img,price,description) {
-    let array = await axios.get('http://localhost:3000/products/');
-    let res =  await axios.post('http://localhost:3000/products',{
+    let array = await axios.get('http://localhost:3001/products/');
+    let res =  await axios.post('http://localhost:3001/products',{
         id: array.length-1,
         name: name,
         img: img,
