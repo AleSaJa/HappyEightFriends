@@ -1,20 +1,20 @@
 /* --Slideshow-- */
- body{
+ /*body{
     display:flex;
     justify-content: center;
     align-items:center;
     min-height: 100vh;
     background: #131313;
-}
+}*/
 
-*{
+ *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
 html{
-    font-size: .8rem;
+    font-size: .9rem;
 } 
 
 .slideshow{
@@ -22,6 +22,10 @@ html{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    
  
 }
 
