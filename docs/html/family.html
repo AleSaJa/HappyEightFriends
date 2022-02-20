@@ -23,6 +23,12 @@
             .class1 { background: black !important; 
                 text-align: "center";
             }
+            .abs-center {
+                display: flex;
+                 align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
     </style>
     <title>Family</title>
 </head>
@@ -30,28 +36,29 @@
 <body>
     
     <!--Se usa un Jumbotron de BS-->
+
     <div class="class1">
+        
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div class="container" align="center">
             <img src="/docs/assets/images/somosBookingLogo.jpeg" class="col-sm-6"  height="300px" width="500px">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
+   
     </div>
 
     <!--Agregamos 2 Columnas del Periódico-->
     <div class="class1" style="text-align: center"  >
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
         <h1 style="color:white"> CONOCE A LA FAMILIA </h1>
         <br><br>
+        
     <!--Cards-->
     <div class="container">
         <div class="row">
             <div class="col-sm">
+                <div class="abs-center">
                 <div class="card text-white bg-dark mb-3" style="width: 18rem;">
                     <img src="/docs/assets/images/The Black Hardies.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -61,17 +68,26 @@
                     </div>
                 </div>
             </div>
+            </div>
             <div class="col-sm">
+                <div class="abs-center">
                 <div class="card text-white bg-dark mb-3" style="width: 18rem;">
                     <img src="/docs/assets/images/Sage Skylight.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <img src="/docs/assets/images/logo Sage.png" class="card-img-top" alt="...">
+                        <img src="/docs/assets/images/logoSage.png" class="card-img-top" alt="...">
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates adipisci ducimus nemo? Fuga porro necessitatibus cupiditate et error corporis totam corrupti fugiat consequatur vel, repellendus natus nemo suscipit earum ipsum.</p>
                         <a href="https://www.youtube.com/c/SageSkylight" class="btn btn-primary">Escucha nuestra musica</a>
                     </div>
                 </div>
             </div>
+            </div>
+
+        </div>
+        <div class="row">
+
             <div class="col-sm">
+            <div class="abs-center">
+                
                 <div class="card text-white bg-dark mb-3" style="width: 18rem;">
                     <img src="/docs/assets/images/Warhol.JPG" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -81,7 +97,22 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+            <div class="col-sm">
+            <div class="abs-center">
+                <div class="card text-white bg-dark mb-3" style="width: 18rem;">
+                    <img src="/docs/assets/images/jamingo.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <img src="/docs/assets/images/Logo Warhol Blanco.png" class="card-img-top" alt="...">
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias praesentium beatae perferendis nam nulla incidunt sint. Consectetur labore recusandae accusamus earum esse rerum adipisci voluptates hic sunt expedita, quasi voluptatum?</p>
+                        <a class="btn btn-primary"  href="https://www.youtube.com/channel/UCp6X-dUJfeNDrifDZKdL0bA" role="button" >Escucha nuestra musica</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        </div>
+    </div>
     </div>
 
 
