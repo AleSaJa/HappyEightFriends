@@ -2,44 +2,17 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD:docs/html/tienda.html
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-=======
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
->>>>>>> 87ed7562f9212ea7e0d31af9a6e650ce7b6567b7:docs/tienda.html
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- Styles CSS -->
-<<<<<<< HEAD:docs/html/tienda.html
     <link rel="stylesheet" href="../css/navbarStyle.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/tienda.css">
-=======
-    <link rel="stylesheet" href="./assets/css/navbarStyle.css">
-    <link rel="stylesheet" href="../docs/assets/css/tienda.css">
->>>>>>> 87ed7562f9212ea7e0d31af9a6e650ce7b6567b7:docs/tienda.html
 
     <title>Store</title>
-
-    <style>
-        .navbar {
-            font-size: 16px;
-            font-family: Montserrat;
-            /* position: static;  */
-           /* background: black;*/
-            border-right: 1px #601f8c solid;
-            transition: width 600ms ease;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            z-index: 20;
-        }
-    </style>
 </head>
 <body>
 
@@ -51,55 +24,46 @@
     <!-- !Container -->
     <main>
 
-        <!-- Products 
-            <div class="container">
-        -->
-            <section class="row mb-3 mt-3 navbar-dark"> 
+        <!-- *Container Search -->
+        <div class="container">
+            <!-- *Search -->
+            <section class="row mb-5 mt-3">                 
+                <nav class="col-sm-6 col-mb-4">
+                    <form class="form-inline">
+                        <div class="search">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </div>            
+                    </form>
+                </nav>
+                <!-- *PublishProduct -->
+                <div class="product">
+                    <div>
+                        <a href="../html/product.html" class="font-weight-bold  text-white">
+                        <i class="bi bi-bag-fill"></i>
+                        Publicar Producto
+                        </a>
+                    </div>
+                </div>
+                <!-- *ViewCart -->
+                <div class="col-sm-6 col-mb-4 d-flex text-right justify-content-end">
+                    <div class="cart" >
+                        <a href="#" class="font-weight-bold  text-white">
+                        <i class="bi bi-bag-fill"></i>
+                        View Cart
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-        <nav class="col-sm-6 col-mb-4 d-flex ">
-            <form class="form-inline">
-                 <div class="search">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </div>            
-            </form>
-        </nav>
-
-        <div class="col-sm-6 col-mb-4 d-flex text-right justify-content-end">
-            <div class="carrito" >
-            <a href="#" class="font-weight-bold  text-white">
-                
-                <i class="bi bi-bag-fill"></i>
-                View Cart
-            </a>
-         </div>
-        </div>
-        </section>
-        <!--  <section class="row" id="list-items">
-                <div class="col-sm-4 col-md-3 mb-3">
-                    <section class="view-item">
-                        <img class="img-fluid" src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" alt="Article"/>
-                    </section>
-                    <a href="#" class="d-flex flex-column justify-content-center text-center text-decoration-none">
-                        <span class="font-weight-bold">PTV Holiday Bundle</span>
-                        <hr class="w-25 border border-info rounded-pill" >
-                        <span>$89.99</span>
-                    </a>
-                </div> -->
-
-        </section>
-        </div>
-
-
-        <!-- ProductosNuevo -->
+        <!-- *Products -->
         <section>
-
-            <div class="row">
-                <div class="col">
-                    <div class="container item-Container">
+            <div class="row" id="list-items">
+                <div class="col-sm-4 col-md-4 mb-4">
+                    <div class="container d-flex justify-content-center item-Container">
                         <div class="card">
                             <div class="imgBx">
-                                <img src="assets/images/hoodie.png">
+                                <img src="../assets/images/hoodie.png">
                             </div>
                             <div class="contentBx">
                                 <h2>Hoodie Sage Skylight</h2>
@@ -119,86 +83,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="container item-Container">
-                        <div class="card">
-                            <div class="imgBx">
-                                <img src="assets/images/camisa.png">
-                            </div>
-                            <div class="contentBx">
-                                <h2>Camisa Sage Skylight</h2>
-                                <div class="size">
-                                    <h3>Tallas: </h3>
-                                    <span>S</span>
-                                    <span>M</span>
-                                    <span>L</span>
-                                </div>
-                                <div class="color">
-                                    <h3>Color: </h3>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <a href="#">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container item-Container">
-                        <div class="card">
-                            <div class="imgBx">
-                                <img src="assets/images/cd.png">
-                            </div>
-                            <div class="contentBx">
-                                <h2>CD The Black Hardies <style font-size="20px"></style>
-                                </h2>
-                                <a href="#">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-     
-
-           
-
-            
-        </section>
-
-        <!-- *Search 
-                 <nav class="col-sm-6 col-mb-4 d-flex ">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </nav>
-
-               *View Cart 
-                <div class="col-sm-6 col-mb-4 d-flex text-right justify-content-end">
-                    <a href="#" class="font-weight-bold  text-white">
-                        <i class="bi bi-bag-fill mr-2"></i>
-                        View Cart
-                    </a>
-                </div>
-            </section>
-            <section class="row" id="list-items">
-                <div class="col-sm-4 col-md-3 mb-3">
-                    <section class="view-item">
-                        <img class="img-fluid" src="https://d3eum8lucccgeh.cloudfront.net/designs/122357/PTV_HOLIDAYBUNDLE1.jpg" alt="Article"/>
-                    </section>
-                    <a href="#" class="d-flex flex-column justify-content-center text-center text-decoration-none">
-                        <span class="font-weight-bold">PTV Holiday Bundle</span>
-                        <hr class="w-25 border border-info rounded-pill" >
-                        <span>$89.99</span>
-                    </a>
-                </div>
+                </div>                
                 
-            </section>
-        </div>-->
+            </div>
+        </section>
+        
+        </div>
     </main>
+
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Scripts -->
@@ -206,21 +98,8 @@
     <script src="../js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="../assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<!-- 
-    
--->
-
-
-
-<!-- Scripts -->
-<script src="./assets/js/store.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="./assets/js/navbar.js"></script>
-<script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
-
 </html>
