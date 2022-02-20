@@ -3,23 +3,13 @@
     src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
   }
 
-  @font-face {
-    font-family: 'sharkParty';
-    src: url('../fonts/sharkParty.ttf');
-    src: url('../fonts/Montserrat-VariableFont_wght.ttf') 
-  }
-
-  
-
 /* ---------------- Styles Body, NavBar & Main ------------- */
 body {
-    /*background: black;*/
-    background: #131313;
+    background: black;
     margin: 0;
     padding: 0;
-    font-family: Monsterrat;
+    font-family: Montserrat;
 }
-
 
 main {
     margin-left: 5rem;
@@ -66,6 +56,7 @@ main {
 .h4-container{
     background-color: black;
     height: 10rem;
+    border-radius: 10px;
 }
 
 .bg-dark{
@@ -104,7 +95,7 @@ main {
         padding: 0;
     }
 
-   .navbar {
+    .navbar {
         background: black;
         border-top: 1px #601f8c solid;
     }
