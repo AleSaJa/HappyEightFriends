@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+
+/* ---------------- Styles Body, NavBar & Main ------------- */
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 0;
+}
+
+/* ------------ Styles Main Elements ---------- */
+
+/* Jumbotron */
+.img-jumbotron{
+    padding: 0 1rem;
+    /* width: auto;
+    height: 40vh; */
+    object-fit: cover;
+}
+
+.banner{
+    width: fit-content;
+    margin: auto;
+}
+
+/* Image Background */
+.img-background{
+    position: sticky;
+    height: 60vh; 
+    top: 3rem;
+    opacity: .1;
+    z-index: 0;
+}
+
+/* Size of image background */
+.img-background img{
+    height: inherit;
+}
+
+/* Content */
+.content{
+    position: relative;
+    z-index: 10;
+}
+
+/* Events */
+
+.h4-container{
+    background-color: black;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.bg-dark{
+    background-color: black!important;
+}
+
+.card{
+    margin: 5rem 0;
+}
+
+
+/* ------------- Footer --------------- */
+
+/* Image Logo */
+.img-logo{
+    width: 10vw;
+}
+
+/* Icons Footer */
+
+.footer-social i{
+    font-size: 1.5rem;
+}
+
+/* *Footer Happy */
+
+.footer-happy{
+    font-size: .8rem;
+}
+
+/* !---------- Small Screens ------------- */
+
+@media only screen and (max-width: 600px) {
+    .img-jumbotron{
+        height: auto;
+        padding: 0;
+    }
+
+    .navbar {
+        background: black;
+        border-top: 1px #601f8c solid;
+    }
+
+    main {
+        padding: 0 !important;
+        margin:0 !important;
+    }
+
+    .card{
+        margin: 1rem 0;
+    }
+
+    .img-background{
+        height: 30vh; 
+        top: 8rem;
+    }
+    
+    .h4-container{
+        align-items: center;
+        justify-content: center;
+    }
+}
