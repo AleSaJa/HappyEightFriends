@@ -6,6 +6,14 @@
     min-height: 100vh;
     background: #131313;
 }*/
+@font-face {
+    font-family: sharkParty;
+    src: url(../css/Fonts/sharkParty.ttf);
+  }
+
+.h5{
+    font-family: 'sharkPart';
+}
 
 *{
     margin: 0;
