@@ -1,25 +1,41 @@
+@font-face {
+  font-family: sharkParty;
+  src: url(../css/Fonts/sharkParty.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-color: #5e34be;
+  /*   border-color: #5e34be; */
   
   }
 
-  .bg-aboutUs {
+/*  .bg-aboutUs {
     text-shadow: 2px 3px 8px #be99f2 ;
-  }
+  }*/
+
+.h1{
+  padding-bottom: 50px;
+  padding-top: 90px;
+  text-align: center;
+  font-family: 'sharkParty';
+  color: white;
+  font-size: 200px;
+  letter-spacing: 3px;
+}
 
   .form-register {
     /* width: 40%; */
-    background: black !important;
+    background:  black !important;
     padding: 30px;
     /* margin: auto; */
-    margin-top: 100px;
-    border-radius: 74px;
+    margin-top: 0px;
+    border-radius: 10px;
     font-family: 'montserrat';
-    color: #be99f2 !important;
-    box-shadow: 7px 13px 67px #601f8c !important;
+   /* color: #be99f2 !important;*/
+     box-shadow: 5px 11px 65px #601f8c !important;
+     
   }
   
   .form-register h1 {
@@ -34,9 +50,9 @@
   
   .controls {
     width: 100%;
-    background: black!important;
+  background:   #B3B6B7  !important;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 1em;
     /* outline: 1px solid #1f07aa ; */
     font-family: 'calibri';
@@ -80,7 +96,7 @@
     background-color: #f2cb05;
     text-align: center;
     color: #000;
-    border-radius: 3px;
+    border-radius: 10px;
     display: none;
   }
 
@@ -109,6 +125,7 @@
     color: white;
     margin: 16px 0;
     font-size: 16px;
+    border-radius: 10px;
   }
 
   /* ------------ Validación ---------------- */

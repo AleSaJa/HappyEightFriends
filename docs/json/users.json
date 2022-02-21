@@ -41,6 +41,13 @@
       "phone": "55999999",
       "email": "a@gmail.com",
       "password": "4d186321c1a7f0f354b297e8914ab240"
+    },
+    {
+      "id": 7,
+      "name": "juanito",
+      "phone": "3310711876",
+      "email": "correo@test.com",
+      "password": "e10adc3949ba59abbe56e057f20f883e"
     }
   ]
 }
