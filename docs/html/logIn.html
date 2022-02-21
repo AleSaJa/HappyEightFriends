@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="../assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="../css/stylesContact.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/navbarStyle.css">
+    <link rel="stylesheet" href="../css/styleLogin.css">
     
     <title>Inicio de Sesión</title>
 </head>
@@ -23,23 +22,66 @@
     </div>
 
     <!-- !Container -->
-    <main style="margin-left: 6rem;">
-        <!-- Form -->
+    <main>
+
+
+
+
+        <!-- Form
         <form id="formContacto" class="container-sm d-flex flex-column align-items-center w-50 form-register">
-            <!-- Input: Nombre -->
+            Input: Nombre 
             <div class="form-group w-100" id="formInput_nombre">
                 <label for="nombre">Nombre</label>
                 <input class="controls" type="text" name="name" id="nombre" placeholder="Ingrese su Nombre">
             </div>
-            <!-- Input: Check Password -->
+           Input: Check Password 
             <div class="form-group w-100" id="formInput_password2">
                 <label for="password2">Password</label>
                 <input type="password" class="controls" name="password" id="password">
             </div>
-            <!-- Button -->
-                <button class="botons" id="submitBtn" type="submit" value="Enviar">Confirmar</button>
+            Button
+                
             </div>
-        </form>
+        </form> -->
+
+
+          
+
+            <div class="container-sm container-login">
+                <div class="title row">
+
+                    <div class="col text-center"><h1>Início de sesión</h1></div>
+
+                </div>
+                <br>
+
+                <form id="formContacto" class="form login">
+        
+                    <div class="form__field">
+                      
+                     
+                      <input autocomplete="username" type="text" name="name" id="nombre" class="form__input" placeholder="Usuario" required>
+                    </div>
+              
+                    <div class="form__field">
+                      
+                      <input type="password"  name="password" id="password" class="form__input" placeholder="Contraseña" required>
+                    </div>
+              
+                    <div class="form__field">
+                        <button class="botons" id="submitBtn" type="submit" value="Enviar">Confirmar</button>
+                    </div>
+              
+                  </form>
+              
+                  <p class="text--center">¿No estás registrado? <a href="#">Registrarme</a></p>
+            </div>
+
+            
+        
+
+
+
     </main>
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
