@@ -1,6 +1,10 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: 'Montserrat';
+    src: url(../css/Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: 'SharkParty';
+    src: url(../css/Fonts/sharkParty.ttf);
   }
 
 /* ---------------- Styles Body, NavBar & Main ------------- */
@@ -8,13 +12,15 @@ body {
     background: black;
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 main {
     margin-left: 5rem;
     padding: 0;
 }
+
+
 
 /* ------------ Styles Main Elements ---------- */
 
@@ -65,6 +71,7 @@ main {
 
 .card{
     margin: 5rem 0;
+    color: white;
 }
 
 

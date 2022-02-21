@@ -1,10 +1,10 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../Fonts/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../css/Fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: SharkParty;
-  src: url(../Fonts/sharkParty.ttf);
+  font-family: sharkParty;
+  src: url(../css/Fonts/sharkParty.ttf);
 }
 
 
@@ -34,6 +34,14 @@
     
   }
   
+  .logo-text {
+    font-family: 'SharkParty';
+    }
+    
+    .link-text {
+        font-family: 'Montserrat';
+    }
+
   .navbar-nav {
     list-style: none;
     padding: 0;
