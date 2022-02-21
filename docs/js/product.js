@@ -128,7 +128,7 @@ const validarCampo = (expresion, input, campo) => {
 		campos[campo] = true;
         publication[campo] = `${input.value}`;
 	} else {
-		document.getElementById(`formInput_${campo}`).classList.add('form-group-error');
+        document.getElementById(`formInput_${campo}`).classList.add('form-group-error');
 		document.querySelector(`#input__${campo}`).classList.add('form__input-error-active');
 		campos[campo] = false;
 	}
@@ -152,9 +152,21 @@ formulario.addEventListener('submit', async (e) => {
 		setTimeout(() => {
             document.getElementById('mailSuccessful').classList.remove('form-group__send-active');
 		}, 5000);
-        setTimeout(
+        const a = await Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+        if(a.isDismissed && a.dismiss=='timer'){
             location.href = "../html/tienda.html"
-        ,10000);
+        }
+
+        // console.log(`Dismissed ${a.isDismissed.value}\nReason ${a.dismiss.reason}`);
+        // setTimeout(
+        //     location.href = "../html/tienda.html"
+        // ,10000);
 	} else {
 		document.getElementById('mailError').classList.add('form-group__error-active');
 	}
@@ -177,5 +189,6 @@ async function makePostRequest(name,img,price,description) {
         // description: description
     });
     console.log(res);
+    
 }
 
