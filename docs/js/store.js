@@ -46,22 +46,6 @@ listProducts.push({'name':'Holiday Wrapping Paper (Blue)','img':'https://d3eum8l
 // Product #10
 listProducts.push({'name':'Holiday Wrapping Paper (Black)','img':'https://d3eum8lucccgeh.cloudfront.net/designs/79617/Holiday_WrappingPaper_Black_01a.jpg','price':'$4.99','description':'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'});
  */
-publishProduct();
-
-function publishProduct(){
-    if(localStorage.getItem('tipo de usuario') == 'admin'){
-        document.getElementById('product').innerHTML += `
-        <div class="col d-flex text-right justify-content-end">
-            <div class="cart" >
-                <a href="../html/product.html" class="font-weight-bold  text-white">
-                <i class="bi bi-bag-fill"></i>
-                Publicar Producto
-                </a>
-            </div>
-        </div>
-        `;
-    }
-}
 
 async function makeGetRequest() {
     try{

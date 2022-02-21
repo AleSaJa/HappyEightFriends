@@ -11,8 +11,8 @@
 :root {
     --text-primary: #F24141;
     --text-secondary: #ffffff;
-    --bg-primary: #4C1D59;
-    /*  --bg-secondary: #331540;*/
+    --bg-primary: black;
+    --bg-secondary: #331540;
     --transition-speed: 600ms;
   }
   
@@ -25,8 +25,7 @@
     font-size: 16px;
     font-family: 'Montserrat';
     position: fixed;
-    /* background: black;
-    border-right: 1px #601f8c solid;*/
+    background: var(--bg-primary);
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;
