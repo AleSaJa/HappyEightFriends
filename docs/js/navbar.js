@@ -20,7 +20,7 @@ navbar.innerHTML += `
               </li>
             
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/family.html" class="nav-link">
                 
                   <span class="link-text">Familia Somos Booking</span>
                   <img class="nav-icon" src="../assets/navbarIconos/familiabooking2.png" alt="">
