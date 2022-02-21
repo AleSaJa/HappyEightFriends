@@ -14,15 +14,7 @@ main{
       margin: 0;
       padding: 0;
     }
-  
-    :root {
-      --text-primary: #F24141;
-      --text-secondary: #ffffff;
-      --bg-primary: #4C1D59;
-      --bg-secondary: #331540;
-      --bg-tertiary: #864fce;
-      --transition-speed: 600ms;
-    }
+
     @font-face {
   font-family: 'helveticanow';
   src: url(fonts/HelveticaNow.ttf);

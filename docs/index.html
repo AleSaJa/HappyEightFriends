@@ -15,14 +15,13 @@
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./css/navbarStyle.css">
     <link rel="stylesheet" href="./css/index.css">
-    
+    <link rel="stylesheet" href="./css/slideshow.css">
     <title>Index HTML</title>
-
-
 </head>
   
 <body>
-  
+ 
+
   <!-- !NavBar -->
   <div id="navbar">
   
@@ -94,15 +93,51 @@
       </nav>
 
   </div>
+
+  <div id="slideshow">
+    <div class="slideshow">
+        <div class="slideshow-item">
+            <img src="../docs/assets/images/warhol.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Somos Booking</h5>
+                <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
+                   Nuestro objetivo es guiar y acompañar a las bandas y artistas emergentes en el desarrollo de sus proyectos proporcionándoles las herramientas necesarias para establecer y lograr sus objetivos. ¡Trabajemos juntos!</p>
+            </div>
+        </div>
+    
+        <div class="slideshow-item">
+            <img src="../docs/assets/images/concierto2.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Somos Booking</h5>
+                <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
+                    Nuestro objetivo es guiar y acompañar a las bandas y artistas emergentes en el desarrollo de sus proyectos proporcionándoles las herramientas necesarias para establecer y lograr sus objetivos. ¡Trabajemos juntos!</p>
+            </div>
+        </div>
+    
+        <div class="slideshow-item">
+            <img src="../docs/assets/images/concierto1.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Somos Booking</h5>
+                <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
+                    Nuestro objetivo es guiar y acompañar a las bandas y artistas emergentes en el desarrollo de sus proyectos proporcionándoles las herramientas necesarias para establecer y lograr sus objetivos. ¡Trabajemos juntos!</p>
+            </div>
+        </div>
+      </div>
+    </div>
   
   <main>
     
-    <!-- *Image Jumbotron -->
+  <!-- !Slideshow -->
+  
+    
+
+
+    <!-- *Image Jumbotron 
     <div class="banner">
       <img src="./assets/images/headerSomosBookingNoFondo.png" class="img-fluid img-jumbotron banner" alt="Somos Booking ">
     </div>
     <br>
-
+  
     <div class="container-sm d-flex mt-3 justify-content-sm-center align-items-sm-center">
       <h3 class="font-weight-bold text-white">¿Quienes Somos?</h3>
   </div>
@@ -121,18 +156,18 @@
       </div>
       </div>
     </div>
-
+-->
     <!-- SingUp -->
-    <a href="./html/singUp.html" style="position: absolute; top: 2rem;right: 3rem; color: #007bff;">
-      <i class="bi bi-fingerprint" style="font-size:2.5rem"></i>
+    <a href="./html/logIn.html" style="position: absolute; top: 2rem;right: 3rem; color:rgba(255, 255, 255, 0.5);" > 
+      <i class="bi bi-person" style="font-size:2.5rem"></i>
       <p>
-        Registrase
+        Registrarse
       </p>
     </a>
 
     <!-- LOGIN -->
-    <a href="./html/logIn.html" style="position: absolute; top: 2rem;right: 12rem; color: #007bff;">
-      <i class="bi bi-fingerprint" style="font-size:2.5rem"></i>
+    <a href="./html/logIn.html" style="position: absolute; top: 2rem;right: 12rem; color: rgba(255, 255, 255, 0.5);">
+      <i class="bi bi-key" style="font-size:2.5rem "></i>
       <p>
         Iniciar Sesión
       </p>
@@ -270,6 +305,35 @@
             </div>
         </div>
       </div>
+      <div class="col-sm mb-4">
+        <div class="card card  bg-dark h-100">
+            <img class="card-img-top" src="./assets/images/e8.png" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Evento</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur commodi, vitae ab exercitationem maiores aliquam odio. Aliquam reiciendis, distinctio, eum quo assumenda sequi placeat quasi, expedita recusandae saepe magni.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm mb-4">
+        <div class="card card  bg-dark h-100">
+            <img class="card-img-top" src="./assets/images/e9.png" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Evento</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur commodi, vitae ab exercitationem maiores aliquam odio. Aliquam reiciendis, distinctio, eum quo assumenda sequi placeat quasi, expedita recusandae saepe magni.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-sm mb-4">
+        <div class="card card mb-4 bg-dark h-50">
+            <img class="card-img-top" src="./assets/images/e10.jpeg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Evento</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur commodi, vitae ab exercitationem maiores aliquam odio. Aliquam reiciendis, distinctio, eum quo assumenda sequi placeat quasi, expedita recusandae saepe magni.</p>
+            </div>
+        </div>
+      </div>
+
+    </div>
 
     </div>
 
@@ -433,11 +497,11 @@
       <div class="container-sm">
         <nav class="row justify-content-center">
           <a href="#" class="col-12 col-md-3 justify-content-center text-reset mb-3 mb-md-0 d-flex font-weight-bold text-uppercase text-decoration-none align-items-center">
-            <img src="./assets/images/somosBookingLogo.jpeg" alt="Somos Booking" class="img-logo mr-2">
-            Somos Booking
+            <img src="./assets/images/footerSomosBooking.png" alt="Somos Booking" class="img-logo mr-2">
+            
           </a>
           <ul class="col-10 col-md-4 list-unstyled footer-social">
-            <li class="font-weight-bold text-uppercase">Social Media</li>
+            <li class="font-weight-bold text-uppercase"></li>
             <li class="d-flex justify-content-around py-1">
               <!-- Facebook -->
               <a href="https://www.facebook.com/SomosBooking" target="_blank" class="text-reset"><i class="bi bi-facebook"></i></a>
