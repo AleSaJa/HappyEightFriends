@@ -1,141 +1,172 @@
-
-   @font-face {
-    font-family: Montserrat;
-    src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
-  }
-  
-main{
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-    body{
-      font-family: Montserrat;
-      background-color: black;
-      margin: 0;
-      padding: 0;
-    }
-  
-    :root {
-      --text-primary: #F24141;
-      --text-secondary: #ffffff;
-      --bg-primary: #4C1D59;
-      --bg-secondary: #331540;
-      --bg-tertiary: #864fce;
-      --transition-speed: 600ms;
-    }
-    @font-face {
-  font-family: 'helveticanow';
-  src: url(fonts/HelveticaNow.ttf);
-    }
-   
-.cards{
-  margin-left: 10rem;
+body{
+  font-family: Montserrat;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
-a{
-  text-decoration: none;
+#slider{
+  margin-top: 20px;
+}
+
+.img-area{
+  width: 70%;
+  margin-left: 15%;
+}
+
+.img-area img{
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+.content{
+  font-family: 'Montserrat';
   color: white;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 400px;
-  height: 400px;
-  perspective: 1000px; /*Remove this if you don't want the 3D effect */
-  padding: 20px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card .caption{
-    padding: 10px;
-}
-
-.flip-card-back .btn{
-    position: relative;
-    bottom:0;                         
-}
-
-.avatar{
-  position: relative;
-  border-radius: 50%;
-  width: 90%;
-  height: 90%;
-  transition: .6s;
-  box-shadow: 0 0 0 #3336;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #864fce;
-  border-radius: 50%;
-  color: black;
-  transition: .6s;
-  
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #864fce;
-  border-radius: 25%;
-  min-height: 100%;
-  height: max-content;
-  width: 100%;
-  color: white;
-  transform: rotateY(180deg);
-
+  height: 480px;
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 } 
 
-
-.caption{
-  padding: 5px;
+.content >.front{
+  padding: 50px 0;
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+  background-color: rgba(96, 26, 143, 0.616);
+  height:425px;
+  border-radius: 25px;
+  -webkit-backface-visibility: hidden;
+  transition: webkit-transform .5s linear 0s;
+  transition:transform .5s linear 0s;
 }
 
-
-@media only screen and (max-width: 600px) {
-    main{
-      margin-left: 0%;
-    }
-
-    .cards{
-      margin-left: 0%;
-    }
-
-    .flip-card {
-      background-color: transparent;
-      width: 250px;
-      height: 250px;
-      perspective: 1000px; /*Remove this if you don't want the 3D effect */
-      padding: 10px;
-
-      font-size: 2.8vw;
-    }
+.content >.back{
+  padding: 50px 0;
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
+  background-color: rgba(96, 26, 143, 0.616);
+  height:425px;
+  border-radius: 25px;
+  -webkit-backface-visibility: hidden;
+  transition: webkit-transform .5s linear 0s;
+  transition:transform .5s linear 0s;
 }
 
-/* Large screens */
-@media only screen and (min-width: 600px) {
-  
+.content:hover >.front{
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.content:hover >.back{
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.content h2{
+  font-size: 20px;
+  margin:10px auto;
+}
+
+.content h3{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content p{
+  font-style: italic;
+  line-height: 1.9;
+  width: 90%;
+  margin: 10px;
+}
+
+.socials i{
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.socials a{
+  color: white;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 3%;
+}
+
+.owl-dot{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(141, 37, 37);
+  opacity: .8;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.owl-dot.active{
+  background-color: rgb(216, 37, 37);
+}
+
+.fondo {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-radial-gradient(#560e86, #0a0011);
+}
+.container2 span {
+  font-size: 12vw;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  font-family: "Fredoka One";
+  transition: all 300ms ease-in-out;
+}
+.container2 span::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+.container2 span::after {
+  content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+.container2 span:hover {
+  filter: contrast(250%);
+}
+.container2 span:nth-child(1) {
+  color: #ff0697;
+}
+.container2 span:nth-child(2) {
+color: #bb00ff;
+}
+.container2 span:nth-child(3) {
+color: #bb00ff;
+}
+.container2 span:nth-child(4) {
+color: #bb00ff;
+}
+.container2 span:nth-child(5) {
+color: #bb00ff;
+}
+.container2 span:nth-child(6) {
+  color: #ff0697;
+}
+.container2 span:nth-child(7) {
+color: #bb00ff;
+}
+.container2 span:nth-child(8) {
+  color: #ff0697;
 }

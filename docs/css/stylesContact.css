@@ -32,17 +32,7 @@
     margin-bottom: 20px;
   }
   
-  .controls {
-    width: 100%;
-    background: black!important;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 1em;
-    /* outline: 1px solid #1f07aa ; */
-    font-family: 'calibri';
-    font-size: 18px;
-    color: #f2cb05;
-  }
+  
 
   .form-group label{
     margin-top: 1.5em;
