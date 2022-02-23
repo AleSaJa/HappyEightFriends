@@ -31,7 +31,7 @@
     padding: 30px;
     /* margin: auto; */
     margin-top: 0px;
-    border-radius: 10px;
+    border-radius: 72px;
     font-family: 'montserrat';
    /* color: #be99f2 !important;*/
      box-shadow: 5px 11px 65px #601f8c !important;
@@ -50,8 +50,7 @@
   
   .controls {
     width: 100%;
-  background:   #626567 
-  !important;
+  background:   #000000  !important;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 1em;

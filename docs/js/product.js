@@ -171,9 +171,10 @@ async function makePostRequest(name,img,price,description) {
     let res =  await axios.post('http://localhost:3001/products',{
         id: array.length-1,
         name: name,
-        img: img,
-        price: "$"+price,
-        description: description
+        item: 'clothe',
+        img: img
+        // price: "$"+price,
+        // description: description
     });
     console.log(res);
 }

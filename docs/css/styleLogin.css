@@ -1,0 +1,214 @@
+
+  .hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  
+  .icons {
+    display: none;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  /* layout/base.css */
+  
+  :root {
+    --htmlFontSize: 100%;
+  
+    --bodyBackgroundColor: black;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+
+    --text-primary: #be1887;
+    --text-secondary: #ffffff;
+    --bg-primary: #4C1D59;
+    --bg-secondary: #331540;
+    --bg-tertiary: #864fce;
+  }
+  
+  body {
+    /* background-color: var(--bodyBackgroundColor); */
+    background-image: url(../assets/images/Background/concierto.gif);
+    background-size: cover;
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  }
+  
+  /* modules/anchor.css */
+  
+  :root {
+    --anchorColor: #eee;
+  }
+  
+  a {
+    color: var(--text-primary);
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* modules/form.css */
+  
+  :root {
+    --formGap: 0.875rem;
+  }
+  
+  input, button {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .form {
+    display: grid;
+    gap: var(--formGap);
+  }
+  
+  .form input[type="password"],
+  .form input[type="text"],
+  .form button {
+    inline-size: 100%;
+  }
+  
+  .form__field {
+    display: flex;
+  }
+  
+  .form__input {
+    flex: 1;
+  }
+
+  
+  /* modules/login.css */
+  
+  :root {
+    --loginBorderRadus: 0.25rem;
+    --loginColor: #eee;
+  
+    --loginInputBackgroundColor: #3b4148;
+    --loginInputHoverBackgroundColor: #434a52;
+  
+    --loginLabelBackgroundColor: #363b41;
+  
+    --loginSubmitBackgroundColor: var(--bg-tertiary);
+    --loginSubmitColor: #eee;
+    --loginSubmitHoverBackgroundColor: var(--bg-primary);
+  }
+  
+  .login {
+    color: var(--loginColor);
+  }
+  
+  .login label,
+  .login input[type="text"],
+  .login input[type="password"],
+  .login button {
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+  }
+  
+  .login label {
+    background-color: var(--loginLabelBackgroundColor);
+    padding-inline: 1.25rem;
+  }
+  
+  .login input[type="password"],
+  .login input[type="text"] {
+    background-color: var(--loginInputBackgroundColor);
+  }
+  
+  .login input[type="password"]:focus,
+  .login input[type="password"]:hover,
+  .login input[type="text"]:focus,
+  .login input[type="text"]:hover {
+    background-color: var(--loginInputHoverBackgroundColor);
+  }
+  
+  .login button {
+    background-color: var(--loginSubmitBackgroundColor);
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .login button:focus,
+  .login button:hover {
+    background-color: var(--loginSubmitHoverBackgroundColor);
+  }
+  
+  /* modules/text.css */
+  
+  p {
+    margin-block: 1.5rem;
+  }
+  
+  .text--center {
+    text-align: center;
+  }
+
+  .container-login{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    max-width: 600px;
+    border-color: var(--bg-primary);
+    border-width: 1px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 74px;
+    box-shadow:  4px 8px 11px 16px #893abd;
+  -webkit-box-shadow:  4px 8px 11px 16px #893abd;
+  -moz-box-shadow:  4px 8px 11px 16px #893abd;
+  background-color: rgba(0, 0, 0, 0.89);
+  }
+  
+  .container-login p{
+    color: white;
+    
+  }
+
+.title{
+  color: var(--loginColor);
+
+  margin: auto;
+}
+  

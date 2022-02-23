@@ -5,67 +5,80 @@
       "item": "clothe",
       "name": "Hoodie Sage Skylight",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323135/zh4cahedpx3refi5n0in.png"
-    },{
+    },
+    {
       "id": 1,
       "item": "clothe",
       "name": "Camisa Sage Skylight",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323120/rasm1ydy8krndizc682n.png"
-    },{
+    },
+    {
       "id": 2,
       "item": "music",
       "name": "CD The Black Hardies",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323129/jlcdnkjux4kps48hzi0l.png"
-    },{
+    },
+    {
       "id": 3,
       "item": "hat",
       "name": "Bucket Hat The Black Hardies",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323118/bhwghikxg518bxfeucbw.png"
-    },{
+    },
+    {
       "id": 4,
       "item": "clothe",
       "name": "Hoodie The Black Hardies",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323129/lqltzfgaeg0yzqmuun82.png"
-    },{
+    },
+    {
       "id": 5,
       "item": "clothe",
       "name": "Camisa The Black Hardies",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323134/nzg8hlaq2umm5bq8rfmw.png"
-    },{
+    },
+    {
       "id": 6,
       "item": "clothe",
       "name": "Jogger The Black Hardies",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323133/yvd6zyc94qfsymqgv80o.png"
-    },{
+    },
+    {
       "id": 7,
       "item": "clothe",
       "name": "Camisa Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323155/ndvoxeihurde5gqucoga.png"
-    },{
+    },
+    {
       "id": 8,
       "item": "hat",
       "name": "Baseball Cap Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323140/jdpx2cyllrjchig33u6m.png"
-    },{
+    },
+    {
       "id": 9,
       "item": "hat",
       "name": "Beanie Hat Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323138/ztlzznpqw1o5z97xwc0y.png"
-    },{
+    },
+    {
       "id": 10,
       "item": "clothe",
       "name": "Hoodie Hat Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323132/jn3rzg5dnojsuropvwzt.png"
-    },{
+    },
+    {
       "id": 11,
       "item": "clothe",
       "name": "Hoodie Hat Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323132/nosa1ri1lapgo4qyj1mq.png"
-    },{
+    },
+    {
       "id": 12,
       "item": "music",
       "name": "Funko Warhol",
       "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323123/osst1l6yiijxc8kdco28.png"
-    },{
+    },
+    {
       "id": 13,
       "item": "music",
       "name": "Pin Warhol",

@@ -2,45 +2,10 @@
   "users": [
     {
       "id": 1,
-      "name": "Fulanito",
-      "phone": "6666666666",
-      "email": "prueba@booking.com",
-      "password": "Hola"
-    },
-    {
-      "id": 2,
-      "name": "Juanito",
-      "phone": "6666666666",
-      "email": "prueba@booking.com",
-      "password": "hola"
-    },
-    {
-      "id": 3,
-      "name": "Alan",
-      "phone": "5555555555",
-      "email": "prueba@gmail.com",
-      "password": "hola"
-    },
-    {
-      "id": 4,
-      "name": "ruravi",
-      "phone": "3310611788",
-      "email": "joseruravi@hotmail.com",
+      "name": "Ruravi",
+      "phone": "331076458",
+      "email": "correo@corre.com",
       "password": "e10adc3949ba59abbe56e057f20f883e"
-    },
-    {
-      "id": 5,
-      "name": "all",
-      "phone": "66666666",
-      "email": "all@gmail.com",
-      "password": "4d186321c1a7f0f354b297e8914ab240"
-    },
-    {
-      "id": 6,
-      "name": "Ale",
-      "phone": "55999999",
-      "email": "a@gmail.com",
-      "password": "4d186321c1a7f0f354b297e8914ab240"
     }
   ]
 }
