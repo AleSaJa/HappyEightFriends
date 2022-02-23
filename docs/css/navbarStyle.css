@@ -3,7 +3,7 @@
   src: url(../css/Fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: SharkParty;
+  font-family: sharkParty;
   src: url(../css/Fonts/sharkParty.ttf);
 }
 
@@ -11,7 +11,7 @@
 :root {
     --text-primary: #F24141;
     --text-secondary: #ffffff;
-    --bg-primary: #4C1D59;
+    --bg-primary: black;
     --bg-secondary: #331540;
     --transition-speed: 600ms;
   }
@@ -23,10 +23,9 @@
 
   .navbar {
     font-size: 16px;
-    font-family: Monsterrat;
+    font-family: 'Montserrat';
     position: fixed;
-    background: black;
-    border-right: 1px #601f8c solid;
+    background: var(--bg-primary);
     transition: width 600ms ease;
     overflow: hidden;
     margin: 0;
@@ -35,6 +34,14 @@
     
   }
   
+  .logo-text {
+    font-family: 'SharkParty';
+    }
+    
+    .link-text {
+        font-family: 'Montserrat';
+    }
+
   .navbar-nav {
     list-style: none;
     padding: 0;
@@ -65,9 +72,9 @@
     display: flex;
     align-items: center;
     height: 5rem;
-    color: var(--text-primary);
+    color: red;
     text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
+    filter: grayscale(100%) opacity(1); 
     transition: var(--transition-speed);
     width: 100%;
   }

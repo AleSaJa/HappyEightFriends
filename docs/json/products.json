@@ -2,80 +2,87 @@
   "products": [
     {
       "id": 0,
-      "name": "Forget Regret Hoodie",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/115910/364679246.jpg",
-      "price": "$89.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Hoodie Sage Skylight",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323135/zh4cahedpx3refi5n0in.png"
     },
     {
       "id": 1,
-      "name": "Selfish Machines Hoodie",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/121057/PTV_SELFISHMACHINES-HOODIE.jpg",
-      "price": "$39.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Camisa Sage Skylight",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323120/rasm1ydy8krndizc682n.png"
     },
     {
       "id": 2,
-      "name": "A Flair For the Dramatic Vinyl (Flair: Green/White)",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/120827/PTV_AFFTD-LP.jpg",
-      "price": "$19.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "music",
+      "name": "CD The Black Hardies",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323129/jlcdnkjux4kps48hzi0l.png"
     },
     {
       "id": 3,
-      "name": "Selfish Machines CD",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79828/selfishmachines_cd_01.jpg",
-      "price": "$9.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "hat",
+      "name": "Bucket Hat The Black Hardies",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323118/bhwghikxg518bxfeucbw.png"
     },
     {
       "id": 4,
-      "name": "Tape Hoodie",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/118848/Tape_PulloverHoodie_White_01a.jpg",
-      "price": "$39.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Hoodie The Black Hardies",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323129/lqltzfgaeg0yzqmuun82.png"
     },
     {
       "id": 5,
-      "name": "Something Beautiful Bundle",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/122358/PTV_SOMETHINGBEAUTIFUL-BUNDLE.jpg",
-      "price": "$49.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Camisa The Black Hardies",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323134/nzg8hlaq2umm5bq8rfmw.png"
     },
     {
       "id": 6,
-      "name": "Darling You’ll Be Okay Crewneck",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/121055/PTV_DARLING-CREWNECK.jpg",
-      "price": "$34.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Jogger The Black Hardies",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323133/yvd6zyc94qfsymqgv80o.png"
     },
     {
       "id": 7,
-      "name": "Rose Long Sleeve Tee (Black)",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/111740/unnamed.jpeg",
-      "price": "$24.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Camisa Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323155/ndvoxeihurde5gqucoga.png"
     },
     {
       "id": 8,
-      "name": "Holiday Wrapping Paper (Blue)",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/90028/Holiday_WrappingPaper_Blue_01a.jpg",
-      "price": "$4.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "hat",
+      "name": "Baseball Cap Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323140/jdpx2cyllrjchig33u6m.png"
     },
     {
       "id": 9,
-      "name": "Holiday Wrapping Paper (Black)",
-      "img": "https://d3eum8lucccgeh.cloudfront.net/designs/79617/Holiday_WrappingPaper_Black_01a.jpg",
-      "price": "$4.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "hat",
+      "name": "Beanie Hat Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323138/ztlzznpqw1o5z97xwc0y.png"
     },
     {
       "id": 10,
-      "name": "Prueba",
-      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1644891812/idsge7uboypeou4qq35e.png",
-      "price": "$99.99",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      "item": "clothe",
+      "name": "Hoodie Hat Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323132/jn3rzg5dnojsuropvwzt.png"
+    },
+    {
+      "id": 11,
+      "item": "clothe",
+      "name": "Hoodie Hat Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323132/nosa1ri1lapgo4qyj1mq.png"
+    },
+    {
+      "id": 12,
+      "item": "music",
+      "name": "Funko Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323123/osst1l6yiijxc8kdco28.png"
+    },
+    {
+      "id": 13,
+      "item": "music",
+      "name": "Pin Warhol",
+      "img": "https://res.cloudinary.com/duymgcfax/image/upload/v1645323135/xnbfil2yh5k8dfi0yhjp.png"
     }
   ]
 }
