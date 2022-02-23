@@ -73,7 +73,12 @@ formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	const terminos = document.getElementById('check');
 	if(campos.nombre && campos.password1 && campos.correo && campos.telefono && terminos.checked ){
-		await makePostRequest(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
+		
+		
+		//await makePostRequest(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
+		await addUser(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
+
+
 		formulario.reset();
 	} else {
 		Swal.fire({
@@ -95,6 +100,37 @@ formulario.addEventListener('submit', async (e) => {
 
 
 // *Make a POST Request to LocalHost Products
+
+async function addUser(userName, phoneNumber, userMail, password){
+
+
+	auxUser = new User(0, userName, 0 , userMail, phoneNumber, password);
+
+	console.log(JSON.stringify(auxUser));
+
+	const axiosInstance = axios.create({
+		headers: {
+		  "Access-Control-Allow-Origin": "*"
+		}
+	  });
+
+
+	try {
+		var res = await axios.post('http://localhost:8080/api/usuarios/', JSON.stringify(auxUser), {
+			headers:{
+				'Content-Type' : 'application/json',
+				"Access-Control-Allow-Origin": "*"
+			}
+		})
+	} catch (error) {
+		console.log(error);
+	}
+
+
+	console.log(res);
+
+
+}
 
 async function makePostRequest(name,phone,email,password) {
 
