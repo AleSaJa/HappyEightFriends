@@ -5,26 +5,32 @@
     position: relative;
     }
 
-.animatedColor {
+    .animatedColor {
         color: white;
         }
+        
         .flecha {
         animation: arrow 1s ease-in-out infinite;
         font-size:20px;
+        
         }
+        
         .flecha:hover{
         animation:arrow 1s ease-out infinite !important;
         color:#229bf4;
         }
 
-@keyframes arrow {
+        @keyframes arrow {
             0% {
             transform: translate(0px, 50px);
             }
+            
             50% {
             transform: translate(0px, 60px);
             }
+            
             100% {
             transform: translate(0px, 50px);
             }
             }
+
