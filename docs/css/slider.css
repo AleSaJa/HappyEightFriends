@@ -1,0 +1,21 @@
+.carousel-nav-icon {
+    height: 48px;
+    width: 48px;
+    color: aliceblue;
+ }
+ .carousel-item {
+    border-radius: 10px;
+     margin: 8px;
+     height: 300px;
+     background-size: cover;
+     background-position: center center;
+   
+ }
+
+ .col, .col-sm, .col-md {
+    margin: 8px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+ }

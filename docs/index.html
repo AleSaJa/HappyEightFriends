@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./css/navbarStyle.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <title>Index HTML</title>
+
 </head>
   
 <body>
@@ -93,7 +95,7 @@
       </nav>
 
   </div>
-
+<!-- !Slideshow -->
   <div id="slideshow">
     <div class="slideshow">
         <div class="slideshow-item">
@@ -175,7 +177,7 @@
 
     <!-- *Image Background -->
     <div class="img-background text-center">
-      <img src="./assets/images/somosBooking_1.jpeg" class="rounded-circle" alt="Somos Booking ">
+      <img src="./assets/images/somosBooking_1.png" class="rounded-circle" alt="Somos Booking ">
     </div>
 
     <!-- *Spotify -->
@@ -209,12 +211,68 @@
     <div class="container-sm mt-5 text-white">
       
       <!-- *Events -->
-      <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white" style="border-radius:  20px;">
+      <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white" style="border-radius:  10px;">
           <h3 class="font-weight-bold text-white">Eventos</h3>
       </div>
 
-      <!-- *Car Gallery -->
-      <div class="row row-cols-1 row-cols-md-3 mt-5" id="gallery">
+      <!-- *Card Gallery -->
+
+      <div class="my-5 text-center container">
+        <div class="row mb-2">
+          
+        </div>
+        <div class="row d-flex align-items-center">
+           <div class="col-1 d-flex align-items-center justify-content-center">
+              <a role="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                 <div class="carousel-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                       <path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"/>
+                    </svg>
+                 </div>
+              </a>
+           </div>
+           <div class="col-10">
+              <!--Start carousel-->
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+     
+                 <div class="carousel-inner">
+                    <div class="carousel-item active">
+                       <div class="row">
+                          <div style="background-image:url(/docs/assets/images/e1.jpg);" class="col-12 col-md d-flex align-items-center justify-content-center">
+                          </div>
+                          <div style="background-image:url(/docs/assets/images/e12.png);" class="col-12 col-md d-flex align-items-center justify-content-center">
+                          </div>
+                          <div style="background-image:url(/docs/assets/images/e15.jpg);" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                             
+                          </div>
+                       </div>
+                    </div>
+                    <div class="carousel-item">
+                       <div class="row">
+                          <div style="background-image:url(/docs/assets/images/e2.jpg);" class="col-12 col-md d-flex align-items-center justify-content-center">
+                          </div>
+                          <div style="background-image:url(/docs/assets/images/e5.png);" class="col-12 col-md d-flex align-items-center justify-content-center">
+                          </div>
+                          <div style="background-image:url(/docs/assets/images/e6.png);" class="col-12 col-md d-flex align-items-center justify-content-center" class="col-12 col-md d-flex align-items-center justify-content-center">
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <!--End carousel-->
+           </div>
+           <div class="col-1 d-flex align-items-center justify-content-center"><a role="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <div class="carousel-nav-icon">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"/>
+                 </svg>
+              </div>
+              </a>
+           </div>
+        </div>
+     </div>
+
+ <!--     <div class="row row-cols-1 row-cols-md-3 mt-5" id="gallery">
         <div class="col-sm-4 mb-4">
             <div class="card card  bg-dark h-100">
               <img class="card-img-top" src="./assets/images/e1.jpg" class="card-img-top rounded-circle" alt="...">
@@ -335,7 +393,7 @@
 
     </div>
 
-    </div>
+    </div>-->
 
       <!-- *Service -->
       <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
@@ -408,8 +466,17 @@
         </div>
         <div class="col-md">
             <div class="card-body">
-                <h5 class="card-title">Sage Skylight</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quidem aperiam eum eligendi sed. Doloremque quibusdam ducimus, consequatur blanditiis, voluptatem minus dolorum eius velit nobis nesciunt repellendus in sit asperiores.</p>
+                <h5 class="card-title" style="font-size: 55px;">Sage Skylight</h5>
+                <p class="card-text">A heart-throb and a heart-attack at the same time. <br> Sage Skylight, banda integrada por Sage como vocalista, Karla Garisoain y Alex 
+                  León en guitarras, Keego Isunza en el bajo y Gustavo Montes en la batería, nos traen 
+                  un sonido pop-rock con mucha actitud. <br>
+                  En 2015 fueron ganadores del concurso Godspeed Attack evento que les ayudó 
+                  a dar a conocer su propuesta consiguiendo su participación en eventos como el 212 RMX y el Revolution Fest Puebla.
+                  <br>
+                  Para Sage, estar en el escenario implica un cúmulo de emociones expuestas, pues 
+                  el hecho de que use una peluca, retrata la transformación que manifiesta en el 
+                  escenario; sufriendo una evolución musical ocasionando que el impacto visual sea 
+                  grande para quienes disfrutan del espectáculo.</p>
             </div>
         </div>
     </div>
@@ -419,8 +486,16 @@
     <div class="row no-gutters">
       <div class="col-md">
         <div class="card-body">
-          <h5 class="card-title">The Black Hardies</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quidem aperiam eum eligendi sed. Doloremque quibusdam ducimus, consequatur blanditiis, voluptatem minus dolorum eius velit nobis nesciunt repellendus in sit asperiores.</p>
+          <h5 class="card-title" style="font-size: 55px;">The Black Hardies</h5>
+          <p class="card-text">Banda de rock alternativo originaria de Puerto Vallarta; amigos de toda la vida con una meta en común: crear música.
+<br>
+            Black Hardies comenzaron haciendo covers, y con el tiempo lograron descubrir su propio sonido y consolidar un proyecto 
+            con música 100% de su autoría.
+            Con influencias de Heroes del Silencio, Caifanes, Soda Estéreo, Pink Floyd, Radiohead, desde el metal, 
+            pasando por la trova.
+            Los "Hardies" nos contagian su buena vibra e invitan a toda la gente que disfrute de su música a
+            volverse su amigo. 
+            </p>
         </div>
       </div>
       <div class="col-md">
@@ -436,14 +511,19 @@
         </div>
         <div class="col-md">
             <div class="card-body">
-                <h5 class="card-title">Warhol</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quidem aperiam eum eligendi sed. Doloremque quibusdam ducimus, consequatur blanditiis, voluptatem minus dolorum eius velit nobis nesciunt repellendus in sit asperiores.</p>
+                <h5 class="card-title" style="font-size: 55px;">Warhol</h5>
+                <p class="card-text">Warhol es una banda originaria de la bella ciudad de Querétaro, que disfruta y lo da todo en cada tocada. <br>
+                  Tali, Naney y Beto son tres apasionadxs de la música; Creen que la música es la salvación para la soledad, y la compañía perfecta
+para vivir la vida. <br>
+¡Te invitamos a disfrutar de su música y a acompañarlos en sus próximos shows!
+
+                </p>
             </div>
         </div>
     </div>
   </div>
   
-  <!-- Comming Soon -->
+  <!-- Coming Soon -->
   <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
     <h3 class="font-weight-bold text-white">Próximamente</h3>
   </div>
