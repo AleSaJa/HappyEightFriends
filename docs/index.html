@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="./css/flechita.css">
     <!--icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--scroll-->
-    <script src="./js/smooth-scroll.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Index HTML</title>
 </head>
   
@@ -508,7 +508,9 @@
 
   </div>
     
-
+  <button class="ir-arriba">
+    <span class="material-icons">north</span>
+</button>
 
     <!-- *footer -->
     <footer class="text-white py-3">
@@ -539,10 +541,28 @@
       
     </footer>
   </main>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script 
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
+    <!--script ir hacia arriba-->
+    <script>
+      const irArriba = document.querySelector(".ir-arriba");
+
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+        irArriba.style.right = -100 + "px";
+    } else {
+        irArriba.style.right = 5 + "px";
+    }
+});
+    </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
