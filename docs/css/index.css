@@ -21,7 +21,9 @@ main {
     padding: 0;
 }
 
-
+* {
+    scroll-behavior: smooth;
+}
 
 /* ------------ Styles Main Elements ---------- */
 
