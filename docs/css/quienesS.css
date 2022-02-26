@@ -21,6 +21,10 @@ h1 {
   font-family:SharkParty;
 }
 
+h4 {
+    text-align: center;
+}
+
 h3,h4 {
     color: #601f8c
 }
@@ -56,17 +60,21 @@ h3,h4 {
 }
 
   .container { 
-    width: 300px;
-    height: 100px;
+    height: 200px;
     padding: 15px;
     background-color: black;
+    margin-top: 150px;
   }
 
-  #alianza {
-      color: #601f8c;
+  .alianza {
+      color: white;
       text-align: center;
-      width: 10px;
+      padding: 15px;
+      width: inherit;
+      height: inherit;
   }
+
+
 
  .d-flex {
       width: 10px;
