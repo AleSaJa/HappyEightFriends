@@ -43,7 +43,7 @@
         position: absolute;
         opacity: 0;
         animation: cycleImages 31s infinite;
-       
+            
     }
     
     .slideshow-item img{
@@ -88,6 +88,7 @@
       border-radius: 16px;
     padding-left: 20px;
     padding-right: 20px;
+    
     }
     
     
@@ -105,6 +106,7 @@
         font-family: 'Montserrat';
         letter-spacing: .5px;
         font-weight: 300;
+    
     }
     
     @keyframes cycleImages{
@@ -150,8 +152,10 @@
         }
     }
 
+
+  /* RESPONSIVE */
     @media only screen and (min-width: 600px) {
-        /* For tablets: */
+        
         .col-s-1 {width: 8.33%;}
         .col-s-2 {width: 16.66%;}
         .col-s-3 {width: 25%;}
