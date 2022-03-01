@@ -1,26 +1,38 @@
-.btn-primary:hover,
-            .btn-primary:active,
-            .btn-primary:visited,
-            .btn-primary:focus {
+.btn-primary,
+            .btn-primary
+            .btn-primary
+            .btn-primary {
             background-color:#601f8c ;
             border-color:#601f8c ;
+           align-items:center;
+           padding-left: 22px;
+           
             }
 
             .class1 { background: black !important; 
                 text-align: "center";
+               
             }
             .abs-center {
                 display: flex;
                  align-items: center;
                 justify-content: center;
                 min-height: 100vh;
+              
             }
 
 .card-body{
+    
     color: white;
     background-color: #601f8c;
+    box-shadow:  0 0 10px rgb(241, 255, 46);
 }
 
-.btn-primary{
+.card-text{
+text-align: justify;
+}
 
+.card-img-top{
+    box-shadow:  0 0 10px rgb(241, 255, 46);
+ 
 }
