@@ -13,7 +13,7 @@ navbar.innerHTML += `
               </li>
             
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/quienesS.html" class="nav-link">
                  
                   <span class="link-text">¿Quiénes somos?</span>
                   <img class="nav-icon" src="../assets/navbarIconos/hola.png" alt="">
