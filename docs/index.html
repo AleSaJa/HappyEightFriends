@@ -189,6 +189,8 @@
       <img src="./assets/images/somosBooking_1.png" class="rounded-circle" alt="Somos Booking ">
     </div>
 
+
+
     <!-- *Spotify -->
     <div class="container">
       <div class="row">
@@ -575,6 +577,33 @@ para pasar el rato. <br>
       </div>
     </footer>
   </main>
+
+
+  
+  <script 
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <!--script ir hacia arriba-->
+    <script>
+      const irArriba = document.querySelector(".ir-arriba");
+
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+        irArriba.style.right = -100 + "px";
+    } else {
+        irArriba.style.right = 5 + "px";
+    }
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 <!-- Scripts -->
 
