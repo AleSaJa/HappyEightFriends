@@ -1,0 +1,26 @@
+.btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary:visited,
+            .btn-primary:focus {
+            background-color:#601f8c ;
+            border-color:#601f8c ;
+            }
+
+            .class1 { background: black !important; 
+                text-align: "center";
+            }
+            .abs-center {
+                display: flex;
+                 align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+
+.card-body{
+    color: white;
+    background-color: #601f8c;
+}
+
+.btn-primary{
+
+}

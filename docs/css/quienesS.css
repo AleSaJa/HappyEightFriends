@@ -23,16 +23,20 @@ h1 {
 
 h4 {
     text-align: center;
+    color:white;
 }
 
-h3,h4 {
-    color: #601f8c
+h3{
+    color: white;
+    font-family:SharkParty;
+    text-shadow:  0 0 10px rgb(120, 33, 235);
 }
 
 .card {
     border-style: solid;
     border-color: #601f8c;
     border-width: 50px 0px 0px 50px;
+    border-radius: 10px;
 }
 
 #card1 {
@@ -72,7 +76,7 @@ h3,h4 {
   .alianza {
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 0px;
       width: inherit;
       height: inherit;
   }
