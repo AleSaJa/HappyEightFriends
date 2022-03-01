@@ -7,7 +7,7 @@
     src: url(../css/Fonts/sharkParty.ttf);
   }
 
-  * {
+  main {
       background-color: black;
       font-family: Montserrat;
       text-align: justify;
@@ -57,6 +57,9 @@ h3,h4 {
 
 .card-body{
     border-style: none;
+    background-color: black;
+      font-family: Montserrat;
+      text-align: justify;
 }
 
   .container { 
