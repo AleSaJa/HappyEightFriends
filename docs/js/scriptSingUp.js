@@ -86,7 +86,7 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	const terminos = document.getElementById('check');
-	if(campos.nombre && campos.password1 && campos.correo && campos.telefono && terminos.checked && (checkboxes[0].checked || checkboxes[1].checkboxes)){
+	if(campos.nombre && campos.password1 && campos.correo && campos.telefono && terminos.checked && (checkboxes[0].checked || checkboxes[1].checked)){
 		
 		var type = 3;
 
