@@ -21,7 +21,9 @@ main {
     padding: 0;
 }
 
-
+* {
+    scroll-behavior: smooth;
+}
 
 /* ------------ Styles Main Elements ---------- */
 
@@ -121,6 +123,7 @@ main {
         height: 30vh; 
         top: 8rem;
     }
+  
     
     .h4-container{
         align-items: center;
