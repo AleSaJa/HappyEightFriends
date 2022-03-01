@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -6,6 +8,10 @@
   https://github.com/Zxtsv/Creep-toMonedas
  -->
 <head>
+
+  
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../docs/assets/images/favicon.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,9 +25,13 @@
     <link rel="stylesheet" href="./css/navbarStyle.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slideshow.css">
-    <link rel="stylesheet" href="./css/slider.css">
+    
+    <link rel="stylesheet" href="./css/flechita.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Index HTML</title>
-
 </head>
   
 <body>
@@ -34,12 +44,12 @@
       <ul class="navbar-nav">
         <li class="logo">
           <a href="./index.html" class="nav-link">
-            <span class="link-text logo-text" font face="Shark Party, League Spartan, Montserrat">Somos Booking</span>
+            <span class="link-text logo-text"><font face="Shark Party, League Spartan, Montserrat">Somos Booking</font></span>
           </a>
         </li>
       
         <li class="nav-item">
-          <a href="./html/quienesS.html" class="nav-link">
+          <a href="#" class="nav-link">
            
             <span class="link-text">¿Quiénes somos?</span>
             <img class="nav-icon" src="./assets/navbarIconos/hola.png" alt="">
@@ -98,20 +108,11 @@
       </nav>
 
   </div>
-<!-- !Slideshow -->
+
   <div id="slideshow">
     <div class="slideshow">
         <div class="slideshow-item">
-            <img src="../docs/assets/images/warhol.jpg" alt="">
-            <div class="slideshow-item-text">
-                <h5>Somos Booking</h5>
-                <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
-                   Nuestro objetivo es guiar y acompañar a las bandas y artistas emergentes en el desarrollo de sus proyectos proporcionándoles las herramientas necesarias para establecer y lograr sus objetivos. ¡Trabajemos juntos!</p>
-            </div>
-        </div>
-    
-        <div class="slideshow-item">
-            <img src="../docs/assets/images/concierto2.jpg" alt="">
+            <img src="./assets/images/warhol.jpg" alt="">
             <div class="slideshow-item-text">
                 <h5>Somos Booking</h5>
                 <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
@@ -120,7 +121,16 @@
         </div>
     
         <div class="slideshow-item">
-            <img src="../docs/assets/images/concierto1.jpg" alt="">
+            <img src="./assets/images/concierto2.jpg" alt="">
+            <div class="slideshow-item-text">
+                <h5>Somos Booking</h5>
+                <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
+                    Nuestro objetivo es guiar y acompañar a las bandas y artistas emergentes en el desarrollo de sus proyectos proporcionándoles las herramientas necesarias para establecer y lograr sus objetivos. ¡Trabajemos juntos!</p>
+            </div>
+        </div>
+    
+        <div class="slideshow-item">
+            <img src="./assets/images/concierto1.jpg" alt="">
             <div class="slideshow-item-text">
                 <h5>Somos Booking</h5>
                 <p>Somos una agencia de management y producción de eventos de la ciudad de Querétaro.
@@ -178,27 +188,38 @@
       </p>
     </a>
 
+
+    
+    <div class="elemento">
+      <a  class="menuPpal suavizado" href="#web" style="position: absolute; top: -15rem;">
+        <i class="fa fa-angle-down fa-2x flecha animatedColor" aria-hidden="true"></i>
+      </a>
+      </div>
+
+
     <!-- *Image Background -->
     <div class="img-background text-center">
-      <img src="./assets/images/somosBooking_1.png" class="rounded-circle" alt="Somos Booking ">
+      <img src="./assets/images/somosBooking_1.jpeg" class="rounded-circle" alt="Somos Booking ">
     </div>
 
+
+
     <!-- *Spotify -->
-    <div class="container">
+    <div class="container" id="web">
       <div class="row">
-        <div class="col-8"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner" style="border-radius: 20px;">
-            <div class="carousel-item active" >
-              <img src="/docs/assets/images/single2.png" class="d-block w-100" alt="...">
+        <div class="col-8"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.ladygunn.com/wp-content/uploads/2021/04/SHOT_04_0021-scaled.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/docs/assets/images/single3.png" class="d-block w-100" alt="...">
+              <img src="http://readechoonline.com/wp-content/uploads/2021/04/qGdVXOCm-1024x683.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/docs/assets/images/single1.png" class="d-block w-100" alt="...">
+              <img src="https://www.ladygunn.com/wp-content/uploads/2021/04/SHOT_04_0275-1-scaled.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-         <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </button>
@@ -207,41 +228,22 @@
             <span class="sr-only">Next</span>
           </button>
         </div></div>
-        <div class="col-4"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WfExJBJdOzCEKTksL9DuI?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="col-4"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1y7tLhJhl7uJ15D4lLaqcs?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
       </div>
     </div>
+
     <!-- *Container -->
     <div class="container-sm mt-5 text-white">
       
       <!-- *Events -->
-      <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white" style="border-radius:  10px;">
+      <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white" style="border-radius:  20px;">
           <h3 class="font-weight-bold text-white">Eventos</h3>
       </div>
 
-      <!-- *Card Gallery -->
-
-      <div class="container">
-        <div class="box">
-          <img src="/docs/assets/images/e18.jpeg">
-          <span style="color: grey;">GDL</span>
-        </div>
-        <div class="box">
-          <img src="/docs/assets/images/e10.jpeg">
-          <span style="color: grey;">QRO</span>
-        </div>
-        <div class="box">
-          <img src="/docs/assets/images/e17.jpg">
-          <span style="color: grey;">QRO</span>
-        </div>
-        <div class="box">
-          <img src="/docs/assets/images/e13.jpg">
-          <span style="color: grey;">GDL</span>
-        </div>
-      </div>
-
-<!-- <div class="row row-cols-1 row-cols-md-3 mt-5" id="gallery">
+      <!-- *Car Gallery -->
+      <div class="row row-cols-1 row-cols-md-3 mt-5" id="gallery">
         <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-up">
               <img class="card-img-top" src="./assets/images/e1.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -249,8 +251,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+        <div  class="col-sm-4 mb-4">
+            <div class="card card  bg-dark h-100" data-aos="flip-up">
                 <img class="card-img-top" src="./assets/images/e2.jpg" class="card-img-top rounded-circle"alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -259,7 +261,7 @@
             </div>
         </div>
         <div class="col-sm-4 mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-up">
               <img class="card-img-top" src="./assets/images/e3.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -268,7 +270,7 @@
             </div>
         </div>
         <div class="col-sm mb-4">
-            <div class="card card  bg-dark h-100">
+            <div class="card card  bg-dark h-100" data-aos="flip-up">
                 <img class="card-img-top" src="./assets/images/e4.png" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">Evento</h5>
@@ -277,7 +279,7 @@
             </div>
         </div>
         <div class="col-sm mb-4">
-          <div class="card card  bg-dark h-100">
+          <div class="card card  bg-dark h-100" data-aos="flip-up">
               <img class="card-img-top" src="./assets/images/e5.png" class="card-img-top rounded-circle" alt="...">
               <div class="card-body">
               <h5 class="card-title">Evento</h5>
@@ -286,7 +288,7 @@
           </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e6.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -295,7 +297,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e7.jpg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -304,7 +306,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e8.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -313,7 +315,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e9.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -322,7 +324,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card mb-4 bg-dark h-50">
+        <div class="card card mb-4 bg-dark h-50" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e10.jpeg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -331,7 +333,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e8.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -340,7 +342,7 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card  bg-dark h-100">
+        <div class="card card  bg-dark h-100" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e9.png" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
@@ -349,18 +351,18 @@
         </div>
       </div>
       <div class="col-sm mb-4">
-        <div class="card card mb-4 bg-dark h-50">
+        <div class="card card mb-4 bg-dark h-50" data-aos="flip-up">
             <img class="card-img-top" src="./assets/images/e10.jpeg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
             <h5 class="card-title">Evento</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur commodi, vitae ab exercitationem maiores aliquam odio. Aliquam reiciendis, distinctio, eum quo assumenda sequi placeat quasi, expedita recusandae saepe magni.</p>
             </div>
         </div>
-      </div>-->
+      </div>
 
-    <!--   </div> -->
+    </div>
 
-     <!--  </div>-->
+    </div>
 
       <!-- *Service -->
       <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
@@ -428,22 +430,13 @@
 
   <div class="card mt-3 card  bg-dark">
     <div class="row no-gutters">
-        <div class="col-md-5">
+        <div class="col-md-5" data-aos="fade-right">
             <img src="./assets/images/Sage Skylight.jpg" class="d-block w-100" alt="imagen">
         </div>
         <div class="col-md">
             <div class="card-body">
-              <h5 class="font-weight-bold text-white text-uppercase" style="font-size:55px; text-shadow:  0 0 7px rgb(128, 40, 228);"><em>Sage Skylight</em></h5>
-                <p class="card-text">A heart-throb and a heart-attack at the same time. <br> Sage Skylight, banda integrada por Sage como vocalista, Karla Garisoain y Alex 
-                  León en guitarras, Keego Isunza en el bajo y Gustavo Montes en la batería, nos traen 
-                  un sonido pop-rock con mucha actitud. <br>
-                  En 2015 fueron ganadores del concurso Godspeed Attack evento que les ayudó 
-                  a dar a conocer su propuesta consiguiendo su participación en eventos como el 212 RMX y el Revolution Fest Puebla.
-                  <br>
-                  Para Sage, estar en el escenario implica un cúmulo de emociones expuestas, pues 
-                  el hecho de que use una peluca, retrata la transformación que manifiesta en el 
-                  escenario; sufriendo una evolución musical ocasionando que el impacto visual sea 
-                  grande para quienes disfrutan del espectáculo.</p>
+                <h5 class="card-title" style="font-size: 50px;">Sage Skylight</h5>
+                <p class="card-text" style="font-size: 30px;">Inicia como proyecto solista electropop en 2009 hasta que en 2019 se une Jorge Isunza para comformar un dúo pop/rock. Algunas influencias en las que se basa son Nina Simone, Queen, Blondie, Paramore y Lady Gaga</p>
             </div>
         </div>
     </div>
@@ -453,19 +446,11 @@
     <div class="row no-gutters">
       <div class="col-md">
         <div class="card-body">
-          <h5 class="font-weight-bold text-white text-uppercase" style="font-size:55px;text-shadow:  0 0 7px rgb(128, 40, 228);"><em>The Black Hardies</em></h5>
-          <p class="card-text">Banda de rock alternativo originaria de Puerto Vallarta; amigos de toda la vida con una meta en común: crear música.
-<br>
-            Black Hardies comenzaron haciendo covers, y con el tiempo lograron descubrir su propio sonido y consolidar un proyecto 
-            con música 100% de su autoría.
-            Con influencias de Heroes del Silencio, Caifanes, Soda Estéreo, Pink Floyd, Radiohead, desde el metal, 
-            pasando por la trova.
-            Los "Hardies" nos contagian su buena vibra e invitan a toda la gente que disfrute de su música a
-            volverse su amigo. 
-            </p>
+          <h5 class="card-title" style="font-size: 50px;">The Black Hardies</h5>
+          <p class="card-text" style="font-size: 30px;">Nace en Puerto Vallarta, Jalisco con influencias como el punk, reggae, rock alternativo, entre otros. Ha compartido escenario con bandas de la talla de Panteón Rococó, Plastiko, Caloncho, Golden Ganga, Little Jesus...</p>
         </div>
       </div>
-      <div class="col-md">
+      <div class="col-md" data-aos="fade-left">
           <img src="./assets/images/The Black Hardies.jpg" class="d-block w-100" alt="imagen">
       </div>
     </div>
@@ -473,24 +458,19 @@
 
   <div class="card card  bg-dark">
     <div class="row no-gutters">
-        <div class="col-md">
+        <div class="col-md" data-aos="fade-right">
             <img src="./assets/images/Warhol.JPG" class="d-block w-100" alt="imagen">
         </div>
         <div class="col-md">
             <div class="card-body">
-              <h5 class="font-weight-bold text-white text-uppercase" style="font-size:55px;text-shadow:  0 0 7px rgb(128, 40, 228);"><em>Warhol</em></h5>
-                <p class="card-text">Warhol es una banda originaria de la bella ciudad de Querétaro, que disfruta y lo da todo en cada tocada. <br>
-                  Tali, Naney y Beto son tres apasionadxs de la música; Creen que la música es la salvación para la soledad, y la compañía perfecta
-para pasar el rato. <br>
-¡Te invitamos a disfrutar de su música y a acompañarlos en sus próximos shows!
-
-                </p>
+                <h5 class="card-title" style="font-size: 50px;">Warhol</h5>
+                <p class="card-text" style="font-size: 30px;">El sonido de Warhol va desde riffs acelerados con gran fuerza y distorsión, hasta ritmos lentos  con sonidos psicodélicos combinados con piano y otros instrumentos produciendo una gama de sensaciones que van desde la reflexión hasta un derroche de energía acompañado de la melodía de la letra que complementa dicha experiencia</p>
             </div>
         </div>
     </div>
   </div>
   
-  <!-- Coming Soon 
+  <!-- Comming Soon -->
   <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
     <h3 class="font-weight-bold text-white">Próximamente</h3>
   </div>
@@ -503,45 +483,45 @@ para pasar el rato. <br>
       </div>
 
 
-      <div class="card-group" >
-        <div class="card bg-dark" >
+      <div class="card-group">
+        <div class="card bg-dark" data-aos="zoom-in">
           <img class="card-img-top" src="./assets/images/a2.jpg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
             <h5 class="card-title">Exuberante Tropical</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+            <p class="card-text" style="font-size: 30px;">This is a wider card with supporting text below as a natural lead-in to additional content.
               This card has eveer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-muted">Créditos de las fotos: Christopher Trejo</small></p>
           </div>
         </div>
-        <div class="card bg-dark">
+        <div class="card bg-dark" data-aos="zoom-in">
           <img class="card-img-top" src="./assets/images/a1.jpg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+            <p class="card-text" style="font-size: 30px;">This is a wider card with supporting text below as a natural lead-in to additional content.
               This card has eveer content than the first to show that equal height action.</p>
             <p class="card-text"><small class="text-muted">Créditos de las fotos: Perla Palos</small></p>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./assets/images/a3.png" class="card-img-top rounded-circle"
+        <div class="card bg-dark" data-aos="zoom-in">
+          <img class="card-img-top" src="./assets/images/a3.jpeg" class="card-img-top rounded-circle"
             alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+            <p class="card-text" style="font-size: 30px;">This is a wider card with supporting text below as a natural lead-in to additional content.
               This card has eveer content than the first to show that equal height action.</p>
           </div>
         </div>
       </div>
 
-  </div>-->
+  </div>
     
-
+  <button class="ir-arriba">
+    <span class="material-icons">north</span>
+</button>
 
     <!-- *footer -->
-   
- 
     <footer class="text-white py-3">
       <div class="container-sm">
         <nav class="row justify-content-center">
@@ -567,8 +547,36 @@ para pasar el rato. <br>
           </ul>
         </nav>
       </div>
+      
     </footer>
   </main>
+
+
+  
+  <script 
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <!--script ir hacia arriba-->
+    <script>
+      const irArriba = document.querySelector(".ir-arriba");
+
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+        irArriba.style.right = -100 + "px";
+    } else {
+        irArriba.style.right = 5 + "px";
+    }
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 <!-- Scripts -->
 
