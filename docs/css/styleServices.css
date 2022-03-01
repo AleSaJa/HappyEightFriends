@@ -15,21 +15,12 @@
     border-color: #5e34be;
   }
 
-/* Inicio title Servicios */
-
-/* Fin title Servicios*/
-
-
-
-
 /* Inicio Titles */
 /*setup*/
 *{
   margin: 0;
   padding: 0;
 }
-
-
 
 @font-face {
   font-family: Montserrat;
@@ -48,7 +39,6 @@ body{
   width:500px;
   margin:auto;
 }
-
 
 /*neeeeoooon*/
 h2{
@@ -134,8 +124,6 @@ h2:nth-child(6) a:hover{
 h2, h3 a:hover{
 color:#ffffff;  
 }
-
-
 
 /*glow for webkit*/
 @-webkit-keyframes neon1 {
@@ -554,7 +542,6 @@ color:#ffffff;
   }
 }
 
-
 /*REEEEEEEEEEESPONSIVE*/
 @media (max-width: 650px) {
   
@@ -572,7 +559,6 @@ color:#ffffff;
 
 }
 /* Fin Titles */
-
 
 .bg-aboutUs {
   text-shadow: 2px 3px 8px #be99f2 ;
@@ -622,7 +608,6 @@ h1{
   text-align: center;
   font-family:SharkParty;
 }
-
 
 @media only screen and (max-width: 600px) {
     .img-jumbotron{
