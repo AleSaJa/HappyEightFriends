@@ -64,8 +64,6 @@ async function makePostRequest(userName, userPassword) {
 		"userName":userName,
 		"userPassword":userPassword
 	}
-
-	console.log(JSON.stringify(userData));
 	try {
 		var res = await axios.post('http://localhost:8080/api/login/',JSON.stringify(userData) , {
 			headers:{
@@ -75,9 +73,27 @@ async function makePostRequest(userName, userPassword) {
 		})
 	} catch (error) {
 		console.log(res);
+
+		Swal.fire({
+            title: 'Usuario/Contraseña invalidos',
+            position: 'top',
+            icon: 'warning',
+            iconColor: '#f2cb05',
+            showConfirmButton: false,
+            color: '#5e34be',
+            background: '#121212',
+            timer: 1500,
+        })
+
+		return;
 	}
+
+	//var resdata = JSON.parse(res.data);
+	console.log(res.data.accessToken);
+
+	sessionStorage.setItem("accesToken", res.data.accessToken);
 	
-		if(res.data == 1){
+		
 			post = true;
             Swal.fire({
                 title: 'Usuario',
@@ -89,18 +105,8 @@ async function makePostRequest(userName, userPassword) {
                 background: '#121212',
                 timer: 1500,
             })
-			return;
-		}else{
 
-        Swal.fire({
-            title: 'Usuario/Contraseña invalidos',
-            position: 'top',
-            icon: 'warning',
-            iconColor: '#f2cb05',
-            showConfirmButton: false,
-            color: '#5e34be',
-            background: '#121212',
-            timer: 1500,
-        })
-	} 
+			setTimeout(function(){
+				window.location.href = '../index.html';
+			 }, 2000);
 }
