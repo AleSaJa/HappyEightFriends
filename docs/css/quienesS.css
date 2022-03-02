@@ -30,12 +30,10 @@
   background:  hsl(277, 64%, 61%);
   border-radius: 1em;
   overflow: hidden;
-  
 }
 
 .flex-content {
   width: 40%;
-  
 }
 
 .flex-image {
@@ -51,10 +49,6 @@ img {
 }
 
 
-section  span {
-  color: hsl(277, 64%, 61%);
-
-}
 
 section > p {
   color: hsla(0, 0%, 100%, 0.75);
@@ -64,12 +58,6 @@ section > p {
   font-family: 'Montserrat';
 }
 
-
-div p {
-  color: #fff;
-  font-size: 1.5rem;
-  
-}
 
 .stats-container {
   display: flex;
@@ -92,8 +80,6 @@ div p {
   left: 0;
   background: hsla(277, 64%, 61%);
   opacity: 0.4;
-  
-
 }
 
 
@@ -107,10 +93,6 @@ div p {
 
   .flex-image {
     width: 100%;
-    
-    
-    
- 
   }
   .flex-content {
     width: 100%;
@@ -125,31 +107,18 @@ div p {
 
 
 
-  
- 
-  
-  
-
-section  span {
-  color: hsl(277, 64%, 61%);
-}
 .container-flex {
   display: flex;
- 
-  
-  
   background:  #601f8c;
 }
 
 
 .flex-image {
   width: 50%
-  
 } 
 
  .flex-image {
  position: relative;
- 
 }
 .flex-image::after {
   position: absolute;
@@ -187,10 +156,7 @@ section > p {
 section> p {
   font-family: 'Montserrat';
 }
- .stats {
-  margin: 3em 0; 
-  
-}
+
 
 h2 {
   margin: 1em 0;
@@ -217,39 +183,23 @@ h3 {
   text-shadow:  0 0 10px rgb(128, 40, 228);
 }
 
-.grid { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  }
-.grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-}
-.grid > article img {
-  max-width: 100%;
-}
+
+
 .text {
   padding: 0 20px 20px;
 }
 
-.grid > article:nth-child(1) {
-  grid-column: span 2;
-}
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+
+.card { /*cards de daniel y jaqueline*/
+  box-shadow: 0 0px 8px 0 rgba(255, 251, 3, 0.2);
   width: 40%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
 
 #card4 {
   display: flex;
