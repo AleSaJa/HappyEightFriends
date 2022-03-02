@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../css/Fonts/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: sharkParty;
+    src: url(../css/Fonts/sharkParty.ttf);
+  }
+
+  main {
+      background-color: black;
+      font-family: Montserrat;
+      text-align: justify;
+  }
+
+h1 {
+    color:white;
+  padding-bottom: 50px;
+  padding-top: 90px;
+  text-align: center;
+  font-family:SharkParty;
+}
+
+h4 {
+    text-align: center;
+}
+
+h3,h4 {
+    color: #601f8c
+}
+
+.card {
+    border-style: solid;
+    border-color: #601f8c;
+    border-width: 50px 0px 0px 50px;
+}
+
+#card1 {
+        width: 120%;
+        height: 75%;
+}
+
+#card2 {
+    border-style: none;
+    color: white;
+}
+
+#card3 {
+    width: 300px;
+    height: 60%;
+}
+
+#card4 {
+    width: 69%;
+    height: 60%;
+}
+
+.card-body{
+    border-style: none;
+    background-color: black;
+      font-family: Montserrat;
+      text-align: justify;
+}
+
+  .container { 
+    height: 200px;
+    padding: 15px;
+    background-color: black;
+    margin-top: 150px;
+  }
+
+  .alianza {
+      color: white;
+      text-align: center;
+      padding: 15px;
+      width: inherit;
+      height: inherit;
+  }
+
+
+
+ .d-flex {
+      width: 10px;
+  }
