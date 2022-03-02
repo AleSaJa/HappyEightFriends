@@ -91,9 +91,9 @@ formulario.addEventListener('submit', async (e) => {
 		var type = 3;
 
 		if(checkboxes[0].checked){
-			type = 2;
+			type = 1;
 		}else if(checkboxes[1].checked){
-			type = 3;
+			type = 2;
 		};
 
 		//await makePostRequest(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
