@@ -4,7 +4,11 @@ const formTextImg = formImg.querySelector('#form-text');
 const button = formImg.querySelector('button');
 const formImgPreview = document.querySelector('#preview');
 const input = formImg.querySelector('#file');
+const item = document.getElementById('inputState');
+const size = document.getElementById('size');
+const color = document.getElementById('color');
 var fileURL='';
+var a;
 //password: somos_Somos2
 
 const CLOUDINARY_URL= "https://api.cloudinary.com/v1_1/duymgcfax/image/upload"
@@ -14,23 +18,30 @@ const CLOUDINARY_URL_PRESET = "zddvkupe";
 const expresiones = {
     product: /^[a-zA-Z\ \(\)\:\/]{5,100}$/,  //Letras, espacio, parentesis, dos puntos y diagonal inversa.
     price: /^\d{2,5}\.\d{2}$/, // Numeros, punto y dos digitos para centavos.
-    description: /^[a-zA-Z0-9\.\ \)\(\:\/]{5,130}$/ //Letras, espacio, parentesis, dos puntos, diagonal inversa, punto y numeros.
+    description: /^[a-zA-Z0-9\.\ \)\(\:\/]{5,130}$/, //Letras, espacio, parentesis, dos puntos, diagonal inversa, punto y numeros.
+    stock: /^\d{1,2}$/ // Numeros, punto y dos digitos para centavos.
 }
 const formulario = document.getElementById('formProduct');
 const inputs = document.querySelectorAll('#formProduct input');
 
 const publication = {
     product: "",
-    price: "",
     description: "",
-    image: ""
+    image: "",
+    price: "",
+    stock: 0,
+    size: "",
+    idColor: 0,
+    item: "",
+
 }
 
 const campos = {
     product: false,
     price: false,
     description: false,
-    image: false
+    image: false,
+    item: false
 }
 
 // *Validation Input Image
@@ -68,14 +79,12 @@ formImg.addEventListener('drop', (e) => {
 
 async function processFile(file){
     const docType = file.type;
-    const progressBar = document.querySelector('.progress-bar');
     // *Type of image
     const validExtensions = ['image/jpeg','image/jpg','image/png'];
     if(validExtensions.includes(docType)){
         formImg.classList.remove('form-img');
         formImg.classList.remove('d-flex');
         formImg.classList.add('d-none');
-        progressBar.classList.remove('d-none');
         const formData = new FormData();
         formData.append('file',file);
         formData.append('upload_preset',CLOUDINARY_URL_PRESET);
@@ -84,15 +93,16 @@ async function processFile(file){
             headers: {
                 'Content-Type': 'multipart/form-data'
             },onUploadProgress(e){
-                console.log((e.loaded*100)/e.total);
-                let progress = (e.loaded*100)/e.total;
-                progressBar.textContent=`${progress}%`;
-                progressBar.style.width = `${progress}%`;
+                document.getElementById('progress').classList.remove('d-none');
+                document.getElementById('progress').classList.add('d-flex');
             }
         });
-        progressBar.classList.add('d-none');
+        document.getElementById('progress').classList.remove('d-flex');
+        document.getElementById('progress').classList.add('d-none');
+        formImgPreview.classList.remove('d-none');
+        formImgPreview.classList.add('d-flex');
         formImgPreview.innerHTML += `
-        <img class="w-100" src="${res.data.secure_url}" alt="" srcset="">
+        <img class="w-75" src="${res.data.secure_url}" alt="" srcset="">
         `;
         publication.image = `${res.data.secure_url}`;
         campos.image=true;
@@ -105,7 +115,45 @@ async function processFile(file){
 }
 
 
-// *-------Validation Input Name, Price n Description---------
+// *-------Validation Input Name, Price and Description---------
+
+item.addEventListener('change', (e) => {
+    size.disabled = true;
+    color.disabled = true;
+    campos['item']=true;
+    if(item.value=='Selecciona') campos['item']=false;
+    if(item.value=='Hoodie' || item.value=='Camisa' || item.value=='Jooger'){
+        size.disabled = false;
+        color.disabled = false;
+        publication['item'] = 'clothe';
+    }else if(item.value=='Hat'){
+        color.disabled = false;
+        publication['item'] = 'hat';
+    }else{
+        publication['item'] = 'music';
+    }
+});
+
+size.addEventListener('change', (e) => {
+    publication['size'] = null;
+    if(size.value!='Selecciona'){
+        publication['size'] = size.value;
+    } 
+});
+
+color.addEventListener('change', (e) => {
+    publication['idColor'] = 0;
+    if(color.value!='Selecciona'){
+        switch(color.value){
+            case 'Azul': publication['idColor'] = 1;
+                break;
+            case 'Negro': publication['idColor'] = 2;
+                break;
+            case 'Blanco': publication['idColor'] = 3;
+                break;
+        }
+    }
+});
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
@@ -117,6 +165,9 @@ const validarFormulario = (e) => {
 		break;
         case "description":
             validarCampo(expresiones.description, e.target, 'description');
+        break;
+        case "stock":
+            validarCampo(expresiones.stock, e.target, 'stock');
         break;
 	}
 }
@@ -130,6 +181,10 @@ const validarCampo = (expresion, input, campo) => {
 	} else {
         document.getElementById(`formInput_${campo}`).classList.add('form-group-error');
 		document.querySelector(`#input__${campo}`).classList.add('form__input-error-active');
+        setTimeout(() => {
+            document.getElementById(`formInput_${campo}`).classList.remove('form-group-error');
+		    document.querySelector(`#input__${campo}`).classList.remove('form__input-error-active');
+		}, 3000);
 		campos[campo] = false;
 	}
 }
@@ -143,32 +198,38 @@ inputs.forEach((input) => {
 // *----Publish Product------------
 formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
-
 	if(campos.product && campos.price && campos.description && campos.image){
-        await makePostRequest(publication.product,publication.image,publication.price,publication.description);
-        formulario.reset();
-		document.getElementById('mailError').classList.remove('form-group__error-active');
-		document.getElementById('mailSuccessful').classList.add('form-group__send-active');
-		setTimeout(() => {
-            document.getElementById('mailSuccessful').classList.remove('form-group__send-active');
-		}, 5000);
-        const a = await Swal.fire({
+        console.log(publication);
+        await makePostRequest(publication.product,publication.description,publication.image,publication.price,publication.stock,publication.size,publication.idColor,publication.item);
+		console.log(publication);
+        a = await Swal.mixin().fire({
+            toast: true,
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Producto Publicado Exitosamente',
+            iconColor: '#60cfd6',
             showConfirmButton: false,
+            color: '#5e34be',
+            background: '#131313',
             timer: 1500
         })
+        formulario.reset();
         if(a.isDismissed && a.dismiss=='timer'){
             location.href = "../html/tienda.html"
         }
-
-        // console.log(`Dismissed ${a.isDismissed.value}\nReason ${a.dismiss.reason}`);
-        // setTimeout(
-        //     location.href = "../html/tienda.html"
-        // ,10000);
 	} else {
-		document.getElementById('mailError').classList.add('form-group__error-active');
+        Swal.mixin().fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'error',
+            title: ' Upps',
+            text: 'Por favor rellena todos los campos correctamente',
+            showConfirmButton: false,
+            iconColor: '#f24150',
+			color: '#5e34be',
+			background: '#131313',
+            timer: 3000
+        })
 	}
 });
 
@@ -178,16 +239,18 @@ formulario.addEventListener('submit', async (e) => {
 
 // *Make a POST Request to LocalHost Products
 
-async function makePostRequest(name,img,price,description) {
-    let array = await axios.get('http://localhost:3001/products/');
-    let res =  await axios.post('http://localhost:3001/products',{
-        id: array.length-1,
-        name: name,
-        item: 'clothe',
-        img: img
-        // price: "$"+price,
-        // description: description
+async function makePostRequest(name,desc,img,price, stock,size,color,item) {
+    let res =  await axios.post('http://localhost:8080/api/article/',{
+        namearticle: name,
+        descriptionarticle: desc,
+        photoarticle: img,
+        price: price,
+        stock: stock,
+        size: size,
+        idColor: color,
+        item: item
     });
+   
     console.log(res);
     
 }
