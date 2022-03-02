@@ -1,6 +1,6 @@
 const formulario = document.getElementById('formContacto');
 const inputs = document.querySelectorAll('#formContacto input');
-var post = false;
+var post = true;
 
 const campos = {
 	nombre: false,
@@ -50,42 +50,31 @@ formulario.addEventListener('submit', async (e) => {
 			timer: 1500,
 		})
 	}
-	if(post){
-		window.location.href = "../index.html";
-	}
+	// if(post){
+	// 	window.location.href = "../index.html";
+	// }
 });
 
 
 // *Make a POST Request to LocalHost Products
 
-async function makePostRequest(name, password) {
+async function makePostRequest(userName, userPassword) {
 
-    let array = await axios.get('http://localhost:3000/users/');
-	let data = array.data;
+	var userData = {
+		"userName":userName,
+		"userPassword":userPassword
+	}
+	try {
+		var res = await axios.post('http://localhost:8080/api/login/',JSON.stringify(userData) , {
+			headers:{
+				'Content-Type' : 'application/json',
+				"Access-Control-Allow-Origin": "*"
+			}
+		})
+	} catch (error) {
+		console.log(res);
 
-	//Encriptar contraseña en MD5
-	password = CryptoJS.MD5(password).toString();
-
-    console.log(password);
-
-	for(element of data){
-		if(element.name == name && element.password == password){
-			post = true;
-            Swal.fire({
-                title: 'Usuario',
-				text: `${element.name}`,
-                position: 'top',
-                icon: 'success',
-                showConfirmButton: false,
-                color: '#5e34be',
-                background: '#121212',
-                timer: 1500,
-            })
-			return;
-		}
-	}post = false;
-	if(!post){
-        Swal.fire({
+		Swal.fire({
             title: 'Usuario/Contraseña invalidos',
             position: 'top',
             icon: 'warning',
@@ -95,5 +84,29 @@ async function makePostRequest(name, password) {
             background: '#121212',
             timer: 1500,
         })
-	} 
+
+		return;
+	}
+
+	//var resdata = JSON.parse(res.data);
+	console.log(res.data.accessToken);
+
+	sessionStorage.setItem("accesToken", res.data.accessToken);
+	
+		
+			post = true;
+            Swal.fire({
+                title: 'Usuario',
+				text: `${userName}`,
+                position: 'top',
+                icon: 'success',
+                showConfirmButton: false,
+                color: '#5e34be',
+                background: '#121212',
+                timer: 1500,
+            })
+
+			setTimeout(function(){
+				window.location.href = '../index.html';
+			 }, 2000);
 }

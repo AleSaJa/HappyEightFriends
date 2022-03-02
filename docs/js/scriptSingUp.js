@@ -1,5 +1,19 @@
 const formulario = document.getElementById('formContacto');
 const inputs = document.querySelectorAll('#formContacto input');
+
+console.log(inputs);
+
+const checkboxes = document.getElementsByClassName('checkboxes-type');
+console.log(checkboxes);
+
+checkboxes[0].addEventListener('change', () => {
+	checkboxes[1].checked = false;
+})
+
+checkboxes[1].addEventListener('change', () => {
+	checkboxes[0].checked = false;
+})
+
 var post = false;
 
 const expresiones = {
@@ -13,7 +27,7 @@ const campos = {
 	nombre: false,
 	password1: false,
 	correo: false,
-	telefono: false
+	telefono: false,
 }
 
 const validarFormulario = (e) => {
@@ -72,8 +86,20 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	const terminos = document.getElementById('check');
-	if(campos.nombre && campos.password1 && campos.correo && campos.telefono && terminos.checked ){
-		await makePostRequest(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
+	if(campos.nombre && campos.password1 && campos.correo && campos.telefono && terminos.checked && (checkboxes[0].checked || checkboxes[1].checked)){
+		
+		var type = 3;
+
+		if(checkboxes[0].checked){
+			type = 2;
+		}else if(checkboxes[1].checked){
+			type = 3;
+		};
+
+		//await makePostRequest(inputs[0].value, inputs[1].value, inputs[2].value, inputs[3].value);
+		await addUser(inputs[0].value, inputs[2].value, inputs[3].value, inputs[1].value, type);
+
+		
 		formulario.reset();
 	} else {
 		Swal.fire({
@@ -95,6 +121,31 @@ formulario.addEventListener('submit', async (e) => {
 
 
 // *Make a POST Request to LocalHost Products
+
+async function addUser(userName, userMail, userPassword, userPhone, userType){
+
+
+	auxUser = new User(userName, userMail , userPassword, userPhone, userType);
+
+	console.log(JSON.stringify(auxUser));
+
+
+	try {
+		var res = await axios.post('http://localhost:8080/api/user/', JSON.stringify(auxUser), {
+			headers:{
+				'Content-Type' : 'application/json',
+				"Access-Control-Allow-Origin": "*"
+			}
+		})
+	} catch (error) {
+		console.log(error);
+	}
+
+
+	console.log(res);
+
+
+}
 
 async function makePostRequest(name,phone,email,password) {
 
