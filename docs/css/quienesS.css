@@ -192,12 +192,14 @@ h3 {
 
 
 .card { /*cards de daniel y jaqueline*/
-  box-shadow: 0 0px 8px 0 rgba(255, 251, 3, 0.2);
+ 
   width: 40%;
   flex: 1;
   display: flex;
   flex-direction: column;
-
+  margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
 }
 
 
@@ -210,15 +212,18 @@ h3 {
   padding: 9px;
   background-color: #601f8c;
   border-radius: 10px;
- 
+  
+
   }
 
   .card-title{
-    
     color: #fff;
     text-align: center;
   }
 
   .h4{
-  font-family: 'Montserrat';
+  font-family: 'Montserrat';  
 }
+
+
+
