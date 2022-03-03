@@ -160,15 +160,26 @@
     </div>
 -->
     <!-- SingUp -->
-    <a href="./html/singUp.html" style="position: absolute; top: 2rem;right: 3rem; color:rgba(255, 255, 255, 0.5);" > 
-      <i class="bi bi-person" style="font-size:2.5rem"></i>
-      <p>
-        Registrarse
-      </p>
-    </a>
-
+    <div id="singUp">
+      <a href="./html/singUp.html"  style="position: absolute; top: 2rem;right: 3rem; color:rgba(255, 255, 255, 0.5);" > 
+        <i class="bi bi-person" style="font-size:2.5rem"></i>
+        <p>
+          Registrarse
+        </p>
+      </a>
+    </div>
+    
+    <div id="logOut" class="d-none">
+      <a href="#"  style="position: absolute; top: 2rem;right: 8rem; color:rgba(255, 255, 255, 0.5);" > 
+        <i class="bi bi-person" style="font-size:2.5rem"></i>
+        <p>
+          Cerrar sesión
+        </p>
+      </a>
+    </div>
+    
     <!-- LOGIN -->
-    <a href="./html/logIn.html" style="position: absolute; top: 2rem;right: 12rem; color: rgba(255, 255, 255, 0.5);">
+    <a href="./html/logIn.html" id="logIn" style="position: absolute; top: 2rem;right: 12rem; color: rgba(255, 255, 255, 0.5);">
       <i class="bi bi-key" style="font-size:2.5rem "></i>
       <p>
         Iniciar Sesión
@@ -573,5 +584,8 @@ para pasar el rato. <br>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- <script src="./js/navbar.js"></script> -->
 <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="./js/checkUserRole.js"></script>
 
 </html>
