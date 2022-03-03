@@ -1,4 +1,3 @@
-const { Axios } = require("axios");
 
 const token = sessionStorage.getItem('accessToken');
 var singUp = document.getElementById('singUp');
