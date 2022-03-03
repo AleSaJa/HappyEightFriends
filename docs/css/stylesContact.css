@@ -89,6 +89,7 @@
   }
 
   .form__input-error-active{
+    font-size: .9rem !important;
     display: block;
   }
 

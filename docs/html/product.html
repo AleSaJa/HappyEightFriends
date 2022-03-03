@@ -29,89 +29,129 @@
     <main>
 
         <!-- Products -->
-        <div class="container d-flex align-items-center justify-content-center">
-            <form id="formProduct" class="form-register" style="width: 50vw;">
+        <div class="container d-flex align-items-center justify-content-center vh-100">
+            <form id="formProduct" class="form-register" style="width: 75vw;">
 
+              <!-- Row Info -->
+              <div class="form-row">
+                <!-- Col Inputs -->
+                <div class="col">
+                  <div class="form-row">
                 <!-- Input: Product -->
-                <div class="form-group" id="formInput_product">
-                    <label for="product">Nombre</label>
-                    <input class="controls text1" type="text" name="product" id="product" placeholder="Ingrese el nombre del Producto">
-                    <p id="input__product" class="form__input-error">El nombre solo puede contener letras.</p>
-                </div>
+                    <div class="form-group col-md-9" id="formInput_product">
+                        <label for="product">Nombre</label>
+                        <input class="controls text1" type="text" name="product" id="product" placeholder="Nombre del Producto">
+                        <p id="input__product" class="form__input-error">El nombre solo puede contener letras.</p>
+                    </div>
+                    <!-- Options --> 
+                    <div class="form-group col-md-3">
+                        <label for="inputState">Item</label>
+                        <select id="inputState" class="controls ">
+                          <option selected>Selecciona</option>
+                          <option>Hoodie</option>
+                          <option>Camisa</option>
+                          <option>Jooger</option>
+                          <option>Hat</option>
+                          <option>Articulo</option>
+                          <option>Cd</option>
+                          <option>Otros</option>
+                        </select>
+                    </div>
+                  </div>
 
+                <div class="form-row">
                 <!-- Input: Price -->
-                <div class="form-group" id="formInput_price">
+                <div class="form-group col-4" id="formInput_price">
                     <label for="price">Precio</label>
-                    <input class="controls" type="text"  name="price" id="price" placeholder="Ingrese el precio del producto">
+                    <input class="controls" type="text" name="price" id="price" placeholder="Precio del producto">
                     <p id="input__price" class="form__input-error">El precio solo puede contener numeros y un punto.</p>
                 </div>
-
+                
                 <!-- Input: Description -->
-                <div class="form-group" id="formInput_description">
+                <div class="form-group col" id="formInput_description">
                     <label for="description">Descripción</label>
-                    <input class="controls" type="text" name="description" id="description" placeholder="Ingrese una breve descripción del producto">
+                    <input class="controls" type="text" name="description" id="description" placeholder="Descripción del producto">
                     <p id="input__description" class="form__input-error">La descripción solo puede contener letras.</p>
                 </div>
                 
-                <!-- Checkbox -->
-                <div class="d-flex mb-3 justify-content-around">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Ropa
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                          Articulo
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                        <label class="form-check-label" for="exampleRadios3">
-                          Gorras
-                        </label>
-                      </div>
+              </div>
+              <div class="form-row">
+                <!-- Input: Stock -->
+                <div class="form-group col" id="formInput_stock">
+                  <label for="stock">Stock</label>
+                  <input class="controls" type="text" name="stock" id="stock" placeholder="Stock del producto">
+                  <p id="input__stock" class="form__input-error">El Stock no puede ser mayor a 99, solo números enteros.</p>
                 </div>
-                <!-- Input: Image -->
-                <div class="form-img d-flex align-items-center justify-content-center flex-column font-weight-bold" id="formInput_img">
+                <!-- Input: Size -->
+                <div class="form-group col-md-3">
+                  <label for="size">Talla</label>
+                  <select id="size" class="controls " disabled>
+                    <option selected>Selecciona</option>
+                    <option>Chica</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                  </select>
+                </div>
+                <!-- Input: Color -->
+                <div class="form-group col-md-3">
+                  <label for="color">Color</label>
+                  <select id="color" class="controls " disabled>
+                    <option selected>Selecciona</option>
+                    <option>Azul</option>
+                    <option>Negro</option>
+                    <option>Blanco</option>
+                  </select>
+              </div>
+              </div>
+            </div>
+
+                <!-- Col Img -->
+                <div class="col-5">
+                  <!-- Input: Image -->
+                <div class="form-img h-100 d-flex align-items-center justify-content-center flex-column font-weight-bold" id="formInput_img">
                     <span id="form-text">Arrastra y suelta la imágen</span>
                     <span>o</span>
                     <button class="botons botons-img rounded-pill">Selecciona tu archivo</button>
                     <input type="file" name="file" id="file" hidden/>
                 </div>
-                <div class="progress my-3 d-none">
-                    <div class="progress-bar" id="progress" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                  </div>
+                <!-- Progress -->
+                <div id="progress" class="fa-3x h-100 d-none justify-content-center align-items-center">
+                  <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                </div>
                 <!-- Image Preview -->
-                <div id="preview" class="w-100 d-flex justify-content-center flex-column">
+                <div id="preview" class="d-none align-items-center h-100 justify-content-center">
                 </div>
                 <p id="input__file" class="form__input-error">Tipo de archivo no válido.</p>
 
-
-                <!-- Message Error -->
-                <div class="form-group__error" id="mailError">
-                    <p><img src="../assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> <b>Upps:</b> Por favor rellena todos los campos correctamente. </p>
                 </div>
-                <!-- Button Submit -->
-                <button class="botons" id="submitBtn" type="submit" value="Enviar">Publicar</button>
 
-                <!-- Message Succes -->
-                <div class="form-group__send" id="mailSuccessful">
-                    <p><img src="../assets/bootstrap-4.6.1-dist/icons/exclamation-diamond.svg"> Producto Publicado Exitosamente.</p>
+                
+              </div>
+
+              <!-- Row Submit -->
+              <div class="form-row">
+                  <!-- Button Submit -->
+                  <button class="botons" id="submitBtn" type="submit" value="Enviar">Publicar</button>
+                </div>
+
                 </div>
 
             </form>
         </div>
     </main>
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/product.js"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5983dfd06d.js" crossorigin="anonymous"></script>
+    <!-- BootStrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="../assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Sweetalert Js-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Scrips -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/product.js"></script>
 </body>
 
 
