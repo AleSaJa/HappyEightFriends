@@ -8,11 +8,12 @@
   src: url(../css/Fonts/sharkParty.ttf);
 }
 
+
 .container {
   width: 90%;
-  max-width: 1400px;
-  /* height: 100%; */
+  max-width: 1400px; 
   margin: 0 auto; 
+
 }
 
 
