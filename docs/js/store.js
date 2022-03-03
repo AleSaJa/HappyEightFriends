@@ -76,7 +76,7 @@ async function makeGetRequest() {
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <a href="#">Comprar</a>
+                                <button class="productoLink" id="${element.idarticle}" href="#">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ async function makeGetRequest() {
                             <div class="contentBx">
                                 <h2>${element.name}<style font-size="20px"></style>
                                 </h2>
-                            <a href="#">Comprar</a>
+                                <a class="productoLink" id="${element.idproducto}" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ async function makeGetRequest() {
                                     <span></span>
                                     <span></span>
                                 </div>
-                            <a href="#">Comprar</a>
+                            <a class="productoLink" id="${element.idproducto}" href="#">Comprar</a>
                             </div>
                         </div>
                     </div>
@@ -128,9 +128,23 @@ async function makeGetRequest() {
     }catch(error){
         console.log(error.response.statusText);
     }
+
+    addToStore();
+}
+
+function addToStore(){
+    var productsBtn = document.getElementsByClassName("productoLink");
+    console.log(productsBtn.length);
+
+    for(let i of productsBtn){
+        i.addEventListener('click', () => {
+                createShoppingCart(i.id);
+         })
+    }
 }
 
 makeGetRequest();
+<<<<<<< Updated upstream
 
 /* // For Each of List Products
 const itemHTML = `<div class="col-sm-4 col-md-3 mb-3">
@@ -183,3 +197,5 @@ addItem(); */
 addItemm({'name':'juice',
     'img':'https://www.gs1india.org/media/Juice_pack.jpg',
     'description':'Orange and Apple juice fresh and delicious'}); */
+=======
+>>>>>>> Stashed changes
