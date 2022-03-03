@@ -7,15 +7,6 @@
   font-family: sharkParty;
   src: url(../css/Fonts/sharkParty.ttf);
 }
-* {
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  
-}
-
-
-/* LAYOUT========LAYOUT */
 
 .container {
   width: 90%;
@@ -128,35 +119,7 @@ section > p {
   top: 0;
   left: 0;
   background: hsla(277, 64%, 61%, 0.6);
-  
-  
 }  
-/* Typography */
-
-.content {
-  padding: 3em;
-  text-align: center;
-}
-h1 {
-  margin: 1em 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  font-family: 'sharkParty';
-  padding-bottom: 50px;
-  padding-top: 90px;
-  text-align: center;
-}
-section > p {
-  color: hsla(0, 0%, 100%, 0.75);
-  line-height: 1.5em;
-  font-weight: 400;
-}
-
-section> p {
-  font-family: 'Montserrat';
-}
-
 
 h2 {
   margin: 1em 0;
@@ -170,7 +133,64 @@ h2 {
   letter-spacing: 5px;
 }
 
-h3 {
+.container-sm{
+  width: 40%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Added */
+ float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  color: #fff;
+  font-family: 'Montserrat';
+  
+}
+
+
+
+.card-title{
+  font-family: 'sharkParty';
+  color: #fff;
+  text-shadow:  0 0 10px rgb(128, 40, 228);
+}
+
+.h4{
+font-family: 'Montserrat';
+
+}
+
+#card3{
+  background-color: #601f8c;
+  border-radius: 10px;
+  
+}
+
+#card4{
+  background-color: #601f8c;
+  border-radius: 10px;
+ 
+}
+
+
+
+/* ALIANZAS */
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  /* height: 100%; */
+  margin: 0 auto; 
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* max-width: 100%; */
+}
+
+h1 {
   margin: 1em 0;
   font-size: 2.5rem;
   font-weight: 700;
@@ -179,51 +199,10 @@ h3 {
   padding-bottom: 50px;
   padding-top: 90px;
   text-align: center;
-  letter-spacing: 5px;
-  text-shadow:  0 0 10px rgb(128, 40, 228);
 }
 
-
-
-.text {
-  padding: 0 20px 20px;
-}
-
-
-
-.card { /*cards de daniel y jaqueline*/
- 
-  width: 40%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-}
-
-
-#card4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  max-width: 496px;
-  margin: 0 auto;
-  padding: 9px;
-  background-color: #601f8c;
-  border-radius: 10px;
-  
-
-  }
-
-  .card-title{
-    color: #fff;
-    text-align: center;
-  }
-
-  .h4{
+.h4{
   font-family: 'Montserrat';  
 }
-
 
 
