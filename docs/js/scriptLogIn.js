@@ -91,7 +91,7 @@ async function makePostRequest(userName, userPassword) {
 	//var resdata = JSON.parse(res.data);
 	console.log(res.data.accessToken);
 
-	sessionStorage.setItem("accesToken", res.data.accessToken);
+	sessionStorage.setItem("accessToken", res.data.accessToken);
 	
 		
 			post = true;
