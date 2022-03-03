@@ -87,18 +87,112 @@ main {
 .card-title {
     color: #f24150;
     font-weight: bold;
+    font-family: SharkParty;
 }
 
 .btn {
     background-color: black;
     border-color: #601f8c;
     color: #f2cb05;
+    border: 0rem;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-shadow: 0 1px 0 #f29f05, 0 2px 0 #f29f05, 0 1px 0 #f29f05, 0 2px 0 #601f8c, 0 1px 0 #f29f05, 0 1px 1px rgba(0,0,0,.1), 0 0 3px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
-.btn .btn-primary a:hover {
-    color:#ffffff; 
-    background-color: black;
+.btn h3{
+    font-size: 1.4em;
+    text-shadow: 0 1px 0 #601f8c, 0 2px 0 #601f8c, 0 1px 0 #601f8c, 0 2px 0 #601f8c, 0 1px 0 #601f8c, 0 1px 1px rgba(0,0,0,.1), 0 0 3px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
+
+.btn-primary a:hover { 
+    color:#ffffff !important;
+    background-color: #f2cb05;
+}
+
+
+/* Form*/
+
+.here {
+  color: hsla(0, 0%, 0%, .9);
+  font-family: SharkParty !important;
+  font: normal 140px Round, sans-serif;
+  height: 10px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: 3px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 4000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 70%, 50%, 1), 
+      3px -3px 0 hsla(0, 70%, 50%, 1), 
+      2px -2px 0 hsla(0, 70%, 50%, 1), 
+      1px -1px 0 hsla(0, 70%, 50%, 1),
+      -4px 4px 0 hsla(281, 50%, 50%, 1), 
+      -3px 3px 0 hsla(281, 50%, 50%, 1), 
+      -2px 2px 0 hsla(281, 50%, 50%, 1), 
+      -1px 1px 0 hsla(281, 50%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(281, 50%, 50%, 1), 
+      -3px -3px 0 hsla(281, 50%, 50%, 1), 
+      -2px -2px 0 hsla(281, 50%, 50%, 1), 
+      -1px -1px 0 hsla(281, 50%, 50%, 1),
+      4px 4px 0 hsla(0, 70%, 50%, 1), 
+      3px 3px 0 hsla(0, 70%, 50%, 1), 
+      2px 2px 0 hsla(0, 70%, 50%, 1), 
+      1px 1px 0 hsla(0, 70%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 70%, 50%, 1), 
+      -3px 3px 0 hsla(0, 70%, 50%, 1), 
+      -2px 2px 0 hsla(0, 70%, 50%, 1), 
+      -1px 1px 0 hsla(0, 70%, 50%, 1),
+      4px -4px 0 hsla(281, 50%, 50%, 1), 
+      3px -3px 0 hsla(281, 50%, 50%, 1), 
+      2px -2px 0 hsla(281, 50%, 50%, 1), 
+      1px -1px 0 hsla(281, 50%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(281, 50%, 50%, 1), 
+      3px 3px 0 hsla(281, 50%, 50%, 1), 
+      2px 2px 0 hsla(281, 50%, 50%, 1), 
+      1px 1px 0 hsla(281, 50%, 50%, 1),
+      -4px -4px 0 hsla(0, 70%, 50%, 1), 
+      -3px -3px 0 hsla(0, 70%, 50%, 1), 
+      -2px -2px 0 hsla(0, 70%, 50%, 1), 
+      -1px -1px 0 hsla(0, 70%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 70%, 50%, 1), 
+      3px -3px 0 hsla(0, 70%, 50%, 1), 
+      2px -2px 0 hsla(0, 70%, 50%, 1), 
+      1px -1px 0 hsla(0, 70%, 50%, 1),
+      -4px 4px 0 hsla(281, 50%, 50%, 1), 
+      -3px 3px 0 hsla(281, 50%, 50%, 1), 
+      -2px 2px 0 hsla(281, 50%, 50%, 1), 
+      -1px 1px 0 hsla(281, 50%, 50%, 1);
+  }  
+}
+/* Fin form */
+
+
 
 /* ------------- Footer --------------- */
 
