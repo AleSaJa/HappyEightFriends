@@ -6,6 +6,8 @@
   https://github.com/Zxtsv/Creep-toMonedas
  -->
 <head>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../docs/assets/images/favicon.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,8 +22,12 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slideshow.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/flechita.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Index HTML</title>
-
 </head>
   
 <body>
@@ -163,20 +169,38 @@
     </div>
 -->
     <!-- SingUp -->
-    <a href="./html/singUp.html" style="position: absolute; top: 2rem;right: 3rem; color:rgba(255, 255, 255, 0.5);" > 
-      <i class="bi bi-person" style="font-size:2.5rem"></i>
-      <p>
-        Registrarse
-      </p>
-    </a>
-
+    <div id="singUp">
+      <a href="./html/singUp.html"  style="position: absolute; top: 2rem;right: 3rem; color:rgba(255, 255, 255, 0.5);" > 
+        <i class="bi bi-person" style="font-size:2.5rem"></i>
+        <p>
+          Registrarse
+        </p>
+      </a>
+    </div>
+    
+    <div id="logOut" class="d-none">
+      <a href="#"  style="position: absolute; top: 2rem;right: 8rem; color:rgba(255, 255, 255, 0.5);" > 
+        <i class="bi bi-person" style="font-size:2.5rem"></i>
+        <p>
+          Cerrar sesión
+        </p>
+      </a>
+    </div>
+    
     <!-- LOGIN -->
-    <a href="./html/logIn.html" style="position: absolute; top: 2rem;right: 12rem; color: rgba(255, 255, 255, 0.5);">
+    <a href="./html/logIn.html" id="logIn" style="position: absolute; top: 2rem;right: 12rem; color: rgba(255, 255, 255, 0.5);">
       <i class="bi bi-key" style="font-size:2.5rem "></i>
       <p>
         Iniciar Sesión
       </p>
     </a>
+
+    <div class="elemento">
+      <a  class="menuPpal suavizado" href="#web" style="position: absolute; top: -15rem;">
+              <i class="fa fa-angle-down fa-2x flecha animatedColor" aria-hidden="true"></i>
+            </a>
+            </div>
+      
 
     <!-- *Image Background -->
     <div class="img-background text-center">
@@ -185,7 +209,7 @@
 
     <!-- *Spotify -->
     <div class="container">
-      <div class="row">
+      <div class="row" id="web">
         <div class="col-8"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" style="border-radius: 20px;">
             <div class="carousel-item active" >
@@ -207,12 +231,13 @@
             <span class="sr-only">Next</span>
           </button>
         </div></div>
-        <div class="col-4"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WfExJBJdOzCEKTksL9DuI?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+        <div class="col-4"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1y7tLhJhl7uJ15D4lLaqcs?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
       </div>
     </div>
     <!-- *Container -->
+    <!--
     <div class="container-sm mt-5 text-white">
-      
+    -->
       <!-- *Events -->
       <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white" style="border-radius:  10px;">
           <h3 class="font-weight-bold text-white">Eventos</h3>
@@ -362,7 +387,7 @@
 
      <!--  </div>-->
 
-      <!-- *Service -->
+      <!-- *Services -->
       <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
         <h3 class="font-weight-bold text-white">Conoce Nuestros Servicios</h3>
     </div>
@@ -370,34 +395,22 @@
     <div class="card-group mb-5 ">
       
       <div class="card text-center bg-dark text-white">
-        <div class="card-header">
-          Featured
-        </div>
         <div class="card-body">
-          <h5 class="card-title">Boletín de prensa</h5>
+          <h3 class="card-title">Acompañamiento/ Asesoría personalizada</h3>
           <div class="card-text">
-            <ul class="list-unstyled">
-              <li>5 entrevistas</li>
-              <li>Envío del boletín a más de 100 medios de comunicación nacionales</li>
-            </ul>
+            <h4>Resolvemos tus dudas que tengas sobre temas específicos relacionados al medio para que puedas adentrarte hacia él y comenzar o seguir con tu carrera musical</h4>
             </div>
-          <a href="#" class="btn btn-primary">Más información</a>
+          <a href="/docs/html/servicios.html#acompaña" class="btn btn-primary;">Más información</a>
         </div>
       </div>
 
       <div class="card text-center bg-dark text-white">
-        <div class="card-header">
-          Featured
-        </div>
         <div class="card-body">
-          <h5 class="card-title">Boletín de prensa</h5>
+          <h3 class="card-title">lanzamientos</h3>
           <div class="card-text">
-            <ul class="list-unstyled">
-              <li>8 entrevistas</li>
-              <li>Envío del boletín a más de 100 medios de comunicación nacionales</li>
-            </ul>
+            <h4>Te acompañamos a crear una estrategia de lanzamiento basada en los objetivos de tu proyecto</h4>
           </div>
-          <a href="#" class="btn btn-primary">Más información</a>
+          <a href="/docs/html/servicios.html#lanza" class="btn btn-primary;">Más información</a>
         </div>
       </div>
 
@@ -405,22 +418,31 @@
     </div>
     
     <div class="card text-center bg-dark">
-      <div class="card-header">
-        Featured
-      </div>
       <div class="card-body">
-        <h5 class="card-title">Boletín de prensa</h5>
+        <h3 class="card-title">Redes sociales</h3>
         <div class="card-text">
-          <ul class="list-unstyled">
-            <li>10 entrevistas
-            </li>
-            <li>Envío del boletín a más de 100 medios de comunicación nacionales</li>
-          </ul>
+          <h4>¡Identifica a tu público objetivo y conecta con tu fan ideal!</h4>
         </div>
-        <a href="#" class="btn btn-primary">Más información</a>
+        <a href="../docs/html/servicios.html#redes" class="btn btn-primary;">Más información</a>
+      </div>
+    </div>
+
+    <div class="card text-center bg-dark">
+      <div class="card-body">
+        <a href="/docs/html/servicios.html" class=" btn btn-primary;"><h3><b>Más servicios</b></h3></a>
       </div>
     </div>
     
+
+    <div class="card text-center bg-dark">
+      <div class="card-body">
+        <h3><b>¿Tienes una producción que te gustaría que compartiéramos en nuestras redes?</b></h3>
+        <img style="margin-bottom: 3%;" width=15% src="/docs/assets/images/flecha-hacia-abajo.png">
+        <a class="here" href="https://forms.gle/1A7mVG2qFzmuAVAHA" class=" btn btn-primary;"><h4>Click here!!!</h4></a>
+      </div>
+    </div>
+
+
     <!-- *Bands -->
     <div class="container-sm d-flex h4-container justify-content-sm-center align-items-sm-center border border-white">
       <h3 class="font-weight-bold text-white">Nuestras Bandas</h3>
@@ -537,6 +559,9 @@ para pasar el rato. <br>
 
   </div>-->
     
+  <button class="ir-arriba">
+    <span class="material-icons">north</span>
+</button>
 
 
     <!-- *footer -->
@@ -569,12 +594,40 @@ para pasar el rato. <br>
       </div>
     </footer>
   </main>
+  <script 
+  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <!--script ir hacia arriba-->
+    <script>
+      const irArriba = document.querySelector(".ir-arriba");
+
+irArriba.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 500) {
+        irArriba.style.right = -100 + "px";
+    } else {
+        irArriba.style.right = 5 + "px";
+    }
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 <!-- Scripts -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- <script src="./js/navbar.js"></script> -->
 <script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="./js/checkUserRole.js"></script>
 
 </html>
