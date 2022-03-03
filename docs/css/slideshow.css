@@ -17,12 +17,12 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding-left: 1%;
     box-sizing: border-box;
     }
     
    html{
-        font-size: .9rem;
+        font-size: 1rem;
     } 
     
     .slideshow{
@@ -86,7 +86,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 16px;
-    padding-left: 20px;
+      box-shadow: 5px 5px 15px 8px #601f8c;
     padding-right: 20px;
     
     }
