@@ -141,10 +141,56 @@ async function addUser(userName, userMail, userPassword, userPhone, userType){
 		console.log(error);
 	}
 
+	console.log(res.data);
 
-	console.log(res);
 
+	if(res.data.includes("ya existe")){
+		Swal.fire({
+			title: 'Usuario ya Registrado',
+			position: 'top',
+			icon: 'warning',
+			iconColor: '#f2cb05',
+			showConfirmButton: false,
+			color: '#5e34be',
+			background: '#121212',
+			timer: 1500,
+		})
+		return;
+	}else{
 
+		try {
+			var res = await axios.post('http://localhost:8080/api/login/',{
+				"userName" : userName,
+				"userPassword" : userPassword
+			} , {
+				headers:{
+					'Content-Type' : 'application/json',
+					"Access-Control-Allow-Origin": "*"
+				}
+			})
+		} catch (error) {
+			console.log(res);
+		
+	}
+
+	sessionStorage.setItem("accessToken", res.data.accessToken);
+
+	Swal.fire({
+		title: 'Registro Exitoso',
+		position: 'top',
+		icon: 'success',
+		showConfirmButton: false,
+		color: '#5e34be',
+		background: '#121212',
+		timer: 1500,
+	})
+	
+
+	setTimeout(function(){
+		window.location.href = '../index.html';
+	 }, 2000);
+
+	}
 }
 
 async function makePostRequest(name,phone,email,password) {
