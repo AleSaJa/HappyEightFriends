@@ -37,7 +37,7 @@ navbar.innerHTML += `
               </li>
             
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/eventos.html" class="nav-link">
                 
                   <span class="link-text">Eventos</span>
                   <img class="nav-icon" src="../assets/navbarIconos/eventos2.png" alt="">

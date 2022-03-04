@@ -44,10 +44,10 @@ h2 {
   padding-top: 90px;
   text-align: center;
   font-family: 'Montserrat';
-  color: black;
-  text-shadow: 2px 2px 5px #8a3bd9;
+  color: #8a3bd9;
+  text-shadow: 2px 2px 5px gray;
   font-size: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
 }
 
 .proyect {
@@ -55,11 +55,11 @@ h2 {
   padding-top: 10px;
   text-align:justify; 
   color: white; 
-  width: 60%; 
+  width: 90%; 
   margin-left: auto; 
   margin-right: auto;
   font-family: 'Montserrat';
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .content{

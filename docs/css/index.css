@@ -115,7 +115,7 @@ main {
 /* Form*/
 
 .here {
-  color: hsla(0, 0%, 0%, .9);
+  color: hsla(100, 100%, 100%, 100%);
   font-family: SharkParty !important;
   font: normal 140px Round, sans-serif;
   height: 10px;
@@ -126,16 +126,16 @@ main {
   text-transform: uppercase;
   top: 50%;
   width: 100%;
-  animation: move linear 4000ms infinite;  
+  animation: move linear 6000ms infinite;  
 }
 
 @keyframes move {
   0% {
     text-shadow:
-      4px -4px 0 hsla(0, 70%, 50%, 1), 
-      3px -3px 0 hsla(0, 70%, 50%, 1), 
-      2px -2px 0 hsla(0, 70%, 50%, 1), 
-      1px -1px 0 hsla(0, 70%, 50%, 1),
+      4px -4px 0 hsla(100, 100%, 100%, 100%), 
+      3px -3px 0 hsla(100, 100%, 100%, 100%), 
+      2px -2px 0 hsla(100, 100%, 100%, 100%), 
+      1px -1px 0 hsla(100, 100%, 100%, 100%),
       -4px 4px 0 hsla(281, 50%, 50%, 1), 
       -3px 3px 0 hsla(281, 50%, 50%, 1), 
       -2px 2px 0 hsla(281, 50%, 50%, 1), 
@@ -148,18 +148,18 @@ main {
       -3px -3px 0 hsla(281, 50%, 50%, 1), 
       -2px -2px 0 hsla(281, 50%, 50%, 1), 
       -1px -1px 0 hsla(281, 50%, 50%, 1),
-      4px 4px 0 hsla(0, 70%, 50%, 1), 
-      3px 3px 0 hsla(0, 70%, 50%, 1), 
-      2px 2px 0 hsla(0, 70%, 50%, 1), 
-      1px 1px 0 hsla(0, 70%, 50%, 1)      
+      4px 4px 0 hsla(100, 100%, 100%, 100%), 
+      3px 3px 0 hsla(100, 100%, 100%, 100%), 
+      2px 2px 0 hsla(100, 100%, 100%, 100%), 
+      1px 1px 0 hsla(100, 100%, 100%, 100%)      
     ;
   }
   50% {
     text-shadow:
-      -4px 4px 0 hsla(0, 70%, 50%, 1), 
-      -3px 3px 0 hsla(0, 70%, 50%, 1), 
-      -2px 2px 0 hsla(0, 70%, 50%, 1), 
-      -1px 1px 0 hsla(0, 70%, 50%, 1),
+      -4px 4px 0 hsla(100, 100%, 100%, 100%), 
+      -3px 3px 0 hsla(100, 100%, 100%, 100%), 
+      -2px 2px 0 hsla(100, 100%, 100%, 100%), 
+      -1px 1px 0 hsla(100, 100%, 100%, 100%),
       4px -4px 0 hsla(281, 50%, 50%, 1), 
       3px -3px 0 hsla(281, 50%, 50%, 1), 
       2px -2px 0 hsla(281, 50%, 50%, 1), 
@@ -172,18 +172,18 @@ main {
       3px 3px 0 hsla(281, 50%, 50%, 1), 
       2px 2px 0 hsla(281, 50%, 50%, 1), 
       1px 1px 0 hsla(281, 50%, 50%, 1),
-      -4px -4px 0 hsla(0, 70%, 50%, 1), 
-      -3px -3px 0 hsla(0, 70%, 50%, 1), 
-      -2px -2px 0 hsla(0, 70%, 50%, 1), 
-      -1px -1px 0 hsla(0, 70%, 50%, 1)      
+      -4px -4px 0 hsla(100, 100%, 100%, 100%), 
+      -3px -3px 0 hsla(100, 100%, 100%, 100%), 
+      -2px -2px 0 hsla(100, 100%, 100%, 100%), 
+      -1px -1px 0 hsla(100, 100%, 100%, 100%)      
     ;
   }
   100% {
     text-shadow:
-      4px -4px 0 hsla(0, 70%, 50%, 1), 
-      3px -3px 0 hsla(0, 70%, 50%, 1), 
-      2px -2px 0 hsla(0, 70%, 50%, 1), 
-      1px -1px 0 hsla(0, 70%, 50%, 1),
+      4px -4px 0 hsla(100, 100%, 100%, 100%), 
+      3px -3px 0 hsla(100, 100%, 100%, 100%), 
+      2px -2px 0 hsla(100, 100%, 100%, 100%), 
+      1px -1px 0 hsla(100, 100%, 100%, 100%),
       -4px 4px 0 hsla(281, 50%, 50%, 1), 
       -3px 3px 0 hsla(281, 50%, 50%, 1), 
       -2px 2px 0 hsla(281, 50%, 50%, 1), 
